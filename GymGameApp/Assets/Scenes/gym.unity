@@ -772,6 +772,11 @@ MonoBehaviour:
   - {x: -0.68924165, y: 0.31380573, z: 0}
   - {x: -0.82763845, y: 0.5614628, z: 0}
   - {x: -1.1861733, y: 0.43698397, z: 0}
+--- !u!224 &104641163 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7624409757095984253, guid: 77733d51c564ff540b280bcf20ddcb71, type: 3}
+  m_PrefabInstance: {fileID: 1313473128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &109870392
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,6 +2041,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 221580785}
   m_CullTransparentMesh: 1
+--- !u!224 &224619851 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7624409757095984253, guid: 77733d51c564ff540b280bcf20ddcb71, type: 3}
+  m_PrefabInstance: {fileID: 765795117}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &232598745
 GameObject:
   m_ObjectHideFlags: 0
@@ -3437,9 +3447,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayClick
+      - m_Target: {fileID: 1115943128}
+        m_TargetAssemblyTypeName: exercisedetails, Assembly-CSharp
+        m_MethodName: backButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4632,6 +4642,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 454251507}
+  - component: {fileID: 454251508}
   m_Layer: 0
   m_Name: managers
   m_TagString: Untagged
@@ -4654,8 +4665,29 @@ Transform:
   m_Children:
   - {fileID: 1194055436}
   - {fileID: 1767149363}
+  - {fileID: 1115943127}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &454251508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454251506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cdf9c8b14df6104796d1413a3bff95b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::exercisedetails
+  detailsPage: {fileID: 0}
+  nameText: {fileID: 586523328}
+  equipmentText: {fileID: 0}
+  primaryMusclesText: {fileID: 0}
+  secondaryMusclesText: {fileID: 0}
+  descriptionText: {fileID: 408017902}
+  instructionsText: {fileID: 904210370}
+  exerciseImage: {fileID: 0}
 --- !u!1001 &464394870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4910,6 +4942,7 @@ GameObject:
   - component: {fileID: 486164560}
   - component: {fileID: 486164562}
   - component: {fileID: 486164561}
+  - component: {fileID: 486164563}
   m_Layer: 5
   m_Name: abs menu
   m_TagString: page
@@ -4979,6 +5012,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486164559}
   m_CullTransparentMesh: 1
+--- !u!114 &486164563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486164559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887b672449b15be4b9e34f98a1714374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::exerciselistloader
+  scrollViewContent: {fileID: 104641163}
+  cardPrefab: {fileID: 2208664758754145120, guid: afaec1fdb2e6ad84d94afcc0aca3c9db, type: 3}
+  Category: abs & forearms
 --- !u!1001 &495045410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5457,9 +5505,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.0027777778
-    width: 1
-    height: 0.994525
+    y: 0
+    width: 0
+    height: 0
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 52.719204
@@ -6996,6 +7044,7 @@ GameObject:
   - component: {fileID: 641089269}
   - component: {fileID: 641089271}
   - component: {fileID: 641089270}
+  - component: {fileID: 641089272}
   m_Layer: 5
   m_Name: leg menu
   m_TagString: page
@@ -7065,6 +7114,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641089268}
   m_CullTransparentMesh: 1
+--- !u!114 &641089272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641089268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887b672449b15be4b9e34f98a1714374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::exerciselistloader
+  scrollViewContent: {fileID: 1412975041}
+  cardPrefab: {fileID: 2208664758754145120, guid: afaec1fdb2e6ad84d94afcc0aca3c9db, type: 3}
+  Category: legs
 --- !u!1001 &641809820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8032,6 +8096,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RectMask2D
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!224 &691853136 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7624409757095984253, guid: 77733d51c564ff540b280bcf20ddcb71, type: 3}
+  m_PrefabInstance: {fileID: 464394870}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &700203153
 GameObject:
   m_ObjectHideFlags: 0
@@ -8692,6 +8761,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746667607}
   m_CullTransparentMesh: 1
+--- !u!224 &746932913 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7624409757095984253, guid: 77733d51c564ff540b280bcf20ddcb71, type: 3}
+  m_PrefabInstance: {fileID: 1433097260}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &758019438
 GameObject:
   m_ObjectHideFlags: 0
@@ -9438,6 +9512,7 @@ GameObject:
   - component: {fileID: 830285002}
   - component: {fileID: 830285004}
   - component: {fileID: 830285003}
+  - component: {fileID: 830285005}
   m_Layer: 5
   m_Name: shoulders menu
   m_TagString: page
@@ -9507,6 +9582,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830285001}
   m_CullTransparentMesh: 1
+--- !u!114 &830285005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830285001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887b672449b15be4b9e34f98a1714374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::exerciselistloader
+  scrollViewContent: {fileID: 1803424848}
+  cardPrefab: {fileID: 2208664758754145120, guid: afaec1fdb2e6ad84d94afcc0aca3c9db, type: 3}
+  Category: shoulders
 --- !u!1 &845252868
 GameObject:
   m_ObjectHideFlags: 0
@@ -9593,6 +9683,7 @@ GameObject:
   - component: {fileID: 845624285}
   - component: {fileID: 845624287}
   - component: {fileID: 845624286}
+  - component: {fileID: 845624288}
   m_Layer: 5
   m_Name: chest menu
   m_TagString: page
@@ -9662,6 +9753,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845624284}
   m_CullTransparentMesh: 1
+--- !u!114 &845624288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845624284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887b672449b15be4b9e34f98a1714374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::exerciselistloader
+  scrollViewContent: {fileID: 873673747}
+  cardPrefab: {fileID: 2208664758754145120, guid: afaec1fdb2e6ad84d94afcc0aca3c9db, type: 3}
+  Category: chest
 --- !u!1 &846056785
 GameObject:
   m_ObjectHideFlags: 0
@@ -10062,6 +10168,11 @@ MonoBehaviour:
   - {x: 2.847489, y: -0.7941866, z: 0}
   - {x: 2.847489, y: 0.5840535, z: 0}
   - {x: -2.8174706, y: 0.62608004, z: 0}
+--- !u!224 &873673747 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7624409757095984253, guid: 77733d51c564ff540b280bcf20ddcb71, type: 3}
+  m_PrefabInstance: {fileID: 3232970366259383343}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &874872401
 GameObject:
   m_ObjectHideFlags: 0
@@ -10874,6 +10985,7 @@ GameObject:
   - component: {fileID: 919528240}
   - component: {fileID: 919528242}
   - component: {fileID: 919528241}
+  - component: {fileID: 919528243}
   m_Layer: 5
   m_Name: back Menu
   m_TagString: page
@@ -10943,6 +11055,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919528239}
   m_CullTransparentMesh: 1
+--- !u!114 &919528243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919528239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887b672449b15be4b9e34f98a1714374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::exerciselistloader
+  scrollViewContent: {fileID: 224619851}
+  cardPrefab: {fileID: 2208664758754145120, guid: afaec1fdb2e6ad84d94afcc0aca3c9db, type: 3}
+  Category: back
 --- !u!1 &952180349
 GameObject:
   m_ObjectHideFlags: 0
@@ -13030,6 +13157,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089989500}
   m_CullTransparentMesh: 1
+--- !u!1 &1115943126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1115943127}
+  - component: {fileID: 1115943128}
+  m_Layer: 0
+  m_Name: ExerciseManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1115943127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115943126}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 454251507}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1115943128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115943126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cdf9c8b14df6104796d1413a3bff95b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::exercisedetails
+  detailsPage: {fileID: 313861903}
+  nameText: {fileID: 586523328}
+  equipmentText: {fileID: 156915801}
+  primaryMusclesText: {fileID: 1554760588}
+  secondaryMusclesText: {fileID: 1627811277}
+  descriptionText: {fileID: 408017902}
+  instructionsText: {fileID: 904210370}
+  exerciseImage: {fileID: 1609255389}
 --- !u!1 &1116225410
 GameObject:
   m_ObjectHideFlags: 0
@@ -20183,6 +20362,7 @@ GameObject:
   - component: {fileID: 1389135632}
   - component: {fileID: 1389135634}
   - component: {fileID: 1389135633}
+  - component: {fileID: 1389135635}
   m_Layer: 5
   m_Name: biceps menu
   m_TagString: page
@@ -20252,6 +20432,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389135631}
   m_CullTransparentMesh: 1
+--- !u!114 &1389135635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389135631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887b672449b15be4b9e34f98a1714374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::exerciselistloader
+  scrollViewContent: {fileID: 746932913}
+  cardPrefab: {fileID: 2208664758754145120, guid: afaec1fdb2e6ad84d94afcc0aca3c9db, type: 3}
+  Category: biceps
 --- !u!1001 &1395765823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20438,6 +20633,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400718181}
   m_CullTransparentMesh: 1
+--- !u!224 &1412975041 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7624409757095984253, guid: 77733d51c564ff540b280bcf20ddcb71, type: 3}
+  m_PrefabInstance: {fileID: 1362325051}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1414594790
 GameObject:
   m_ObjectHideFlags: 0
@@ -22694,7 +22894,7 @@ GameObject:
   - component: {fileID: 1609255390}
   - component: {fileID: 1609255389}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: exerciseImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24922,6 +25122,11 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2193354300143245006, guid: a9422bab3c5d21c4da4b4fe033339117, type: 3}
   m_PrefabInstance: {fileID: 1783213720}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1803424848 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7624409757095984253, guid: 77733d51c564ff540b280bcf20ddcb71, type: 3}
+  m_PrefabInstance: {fileID: 444443374}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1806584319
 PrefabInstance:
@@ -27239,7 +27444,7 @@ GameObject:
   - component: {fileID: 2007916990}
   - component: {fileID: 2007916989}
   m_Layer: 5
-  m_Name: stations
+  m_Name: view
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28152,6 +28357,7 @@ GameObject:
   - component: {fileID: 2101367781}
   - component: {fileID: 2101367783}
   - component: {fileID: 2101367782}
+  - component: {fileID: 2101367784}
   m_Layer: 5
   m_Name: triceps menu
   m_TagString: page
@@ -28221,6 +28427,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101367780}
   m_CullTransparentMesh: 1
+--- !u!114 &2101367784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101367780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887b672449b15be4b9e34f98a1714374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::exerciselistloader
+  scrollViewContent: {fileID: 691853136}
+  cardPrefab: {fileID: 2208664758754145120, guid: afaec1fdb2e6ad84d94afcc0aca3c9db, type: 3}
+  Category: triceps
 --- !u!1001 &2124876151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29773,6 +29994,6 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1448254357}
   - {fileID: 412098614}
-  - {fileID: 2007916992}
   - {fileID: 1371606427}
+  - {fileID: 2007916992}
   - {fileID: 454251507}
