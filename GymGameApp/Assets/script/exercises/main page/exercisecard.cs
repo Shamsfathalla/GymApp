@@ -1,6 +1,6 @@
 using UnityEngine;
-using TMPro; // For TextMeshPro UI elements
-using UnityEngine.UI; // For using UI components like Button
+using TMPro; 
+using UnityEngine.UI; 
 
 public class exerciseCard : MonoBehaviour
 {
@@ -8,14 +8,15 @@ public class exerciseCard : MonoBehaviour
     [SerializeField] private TextMeshProUGUI exerciseNameText;
     [SerializeField] private Button viewButton;
 
-    private string documentId;
+    private string documentId; // Store the Firestore document ID for this exercise
 
     public void Setup(string exerciseName, string id)
     {
         exerciseNameText.text = exerciseName;
         documentId = id;
 
-        viewButton.onClick.AddListener(Details);
+        viewButton.onClick.RemoveAllListeners(); // Clear any existing listeners to prevent multiple calls
+        viewButton.onClick.AddListener(Details); // Add listener to the view button to load exercise details
     }
 
     private void Details()

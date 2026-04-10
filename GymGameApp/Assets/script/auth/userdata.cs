@@ -1,5 +1,5 @@
 using UnityEngine;
-using Firebase.Firestore; // For Firestore database operations
+using Firebase.Firestore; 
 
 [FirestoreData] // Saves instance of class in database
 public class Userdata 

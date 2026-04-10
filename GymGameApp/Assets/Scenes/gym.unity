@@ -1442,6 +1442,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132692928}
   m_CullTransparentMesh: 1
+--- !u!224 &136678154 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7624409757095984253, guid: 77733d51c564ff540b280bcf20ddcb71, type: 3}
+  m_PrefabInstance: {fileID: 249612524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &146810725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1979,21 +1984,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1970770915}
         m_TargetAssemblyTypeName: ExerciseHistoryPageUI, Assembly-CSharp
-        m_MethodName: OnBackClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayClick
+        m_MethodName: backButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2129,21 +2122,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 629288309}
         m_TargetAssemblyTypeName: ExerciseDetailEditPageUI, Assembly-CSharp
-        m_MethodName: OnSaveClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayClick
+        m_MethodName: saveButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2764,21 +2745,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1061819352}
         m_TargetAssemblyTypeName: WorkoutDetailsPageUI, Assembly-CSharp
-        m_MethodName: OnBackClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayClick
+        m_MethodName: backButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4314,6 +4283,50 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.28, y: 0.088679776}
   m_EdgeRadius: 0
+--- !u!1 &417369628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 417369629}
+  - component: {fileID: 417369630}
+  m_Layer: 0
+  m_Name: WorkoutDatabaseManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &417369629
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417369628}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 454251507}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &417369630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417369628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97d73dccf3f64140aa950a60ab95223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorkoutDatabaseManager
 --- !u!1 &432213554
 GameObject:
   m_ObjectHideFlags: 0
@@ -4665,6 +4678,7 @@ Transform:
   - {fileID: 1194055436}
   - {fileID: 1767149363}
   - {fileID: 1115943127}
+  - {fileID: 417369629}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &464394870
@@ -5150,19 +5164,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3686662538858147361, guid: c286b92eede881f48b9831d0a6ec9d26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686662538858147361, guid: c286b92eede881f48b9831d0a6ec9d26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3686662538858147361, guid: c286b92eede881f48b9831d0a6ec9d26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1215322547}
     - target: {fileID: 3686662538858147361, guid: c286b92eede881f48b9831d0a6ec9d26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3686662538858147361, guid: c286b92eede881f48b9831d0a6ec9d26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseAddExercisesPanel
+      value: AddPanelButton
       objectReference: {fileID: 0}
     - target: {fileID: 3686662538858147361, guid: c286b92eede881f48b9831d0a6ec9d26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -5666,21 +5684,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 629288309}
         m_TargetAssemblyTypeName: ExerciseDetailEditPageUI, Assembly-CSharp
-        m_MethodName: OnAddSetClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayClick
+        m_MethodName: addSetButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7012,6 +7018,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &629288307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 629288308}
+  - component: {fileID: 629288309}
+  m_Layer: 0
+  m_Name: exerciseEdit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &629288308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629288307}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1008455817}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &629288309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629288307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64b2f81c55799654b8b292ed0c94f8b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExerciseDetailEditPageUI
+  pagePanel: {fileID: 1130665953}
+  exerciseNameText: {fileID: 1573820085}
+  setsContent: {fileID: 763709984}
+  setCardEditPrefab: {fileID: 2017033344955951404, guid: 13b78f546997f28438ddf1edd9675e00, type: 3}
 --- !u!1 &641089268
 GameObject:
   m_ObjectHideFlags: 0
@@ -7325,21 +7379,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1215322547}
         m_TargetAssemblyTypeName: WorkoutBuilderUI, Assembly-CSharp
-        m_MethodName: DiscardWorkout
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayClick
+        m_MethodName: DiscardWorkoutButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8359,21 +8401,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1061819352}
         m_TargetAssemblyTypeName: WorkoutDetailsPageUI, Assembly-CSharp
-        m_MethodName: OnEditClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayClick
+        m_MethodName: editButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8665,6 +8695,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &744955558 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7624409757095984253, guid: 77733d51c564ff540b280bcf20ddcb71, type: 3}
+  m_PrefabInstance: {fileID: 991075749}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &746667607
 GameObject:
   m_ObjectHideFlags: 0
@@ -8882,6 +8917,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758019438}
   m_CullTransparentMesh: 1
+--- !u!224 &763709984 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7624409757095984253, guid: 77733d51c564ff540b280bcf20ddcb71, type: 3}
+  m_PrefabInstance: {fileID: 123009516}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &765795117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9576,6 +9616,11 @@ MonoBehaviour:
   scrollViewContent: {fileID: 1803424848}
   cardPrefab: {fileID: 2208664758754145120, guid: afaec1fdb2e6ad84d94afcc0aca3c9db, type: 3}
   Category: shoulders
+--- !u!224 &836252294 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7624409757095984253, guid: 77733d51c564ff540b280bcf20ddcb71, type: 3}
+  m_PrefabInstance: {fileID: 1461846711}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &845252868
 GameObject:
   m_ObjectHideFlags: 0
@@ -10620,21 +10665,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1215322547}
         m_TargetAssemblyTypeName: WorkoutBuilderUI, Assembly-CSharp
-        m_MethodName: SaveWorkout
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayClick
+        m_MethodName: SaveWorkoutButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11767,6 +11800,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993177635}
   m_CullTransparentMesh: 1
+--- !u!1 &1008455816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1008455817}
+  m_Layer: 0
+  m_Name: pages
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1008455817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008455816}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -704.2937, y: 232.49524, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1770462271}
+  - {fileID: 1061819351}
+  - {fileID: 1215322546}
+  - {fileID: 2119327792}
+  - {fileID: 629288308}
+  - {fileID: 1970770914}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1011218332
 GameObject:
   m_ObjectHideFlags: 0
@@ -12999,6 +13069,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060837986}
   m_CullTransparentMesh: 1
+--- !u!1 &1061819350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1061819351}
+  - component: {fileID: 1061819352}
+  m_Layer: 0
+  m_Name: workoutDetails
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1061819351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061819350}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1008455817}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1061819352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061819350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1d0ec6711ad884597f42b5ccda1101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorkoutDetailsPageUI
+  detailsPanel: {fileID: 1643544537}
+  workoutNameText: {fileID: 437823792}
+  exercisesContent: {fileID: 1708791107}
+  workoutExerciseCardPrefab: {fileID: 1396705146415052234, guid: cb4cd85fa7969444c93861485296a454, type: 3}
+  builderUI: {fileID: 1215322547}
+  exerciseDetailPageUI: {fileID: 2119327793}
 --- !u!1 &1089989500
 GameObject:
   m_ObjectHideFlags: 0
@@ -13383,7 +13503,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1130665954
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13623,6 +13743,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141790736}
   m_CullTransparentMesh: 1
+--- !u!224 &1153801739 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7624409757095984253, guid: 77733d51c564ff540b280bcf20ddcb71, type: 3}
+  m_PrefabInstance: {fileID: 1395765823}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1184864772
 GameObject:
   m_ObjectHideFlags: 0
@@ -13836,6 +13961,65 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1702955006782736993, guid: 77733d51c564ff540b280bcf20ddcb71, type: 3}
   m_PrefabInstance: {fileID: 3232970366259383343}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &1212840772 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7624409757095984253, guid: 77733d51c564ff540b280bcf20ddcb71, type: 3}
+  m_PrefabInstance: {fileID: 1709586299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1215322545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1215322546}
+  - component: {fileID: 1215322547}
+  m_Layer: 0
+  m_Name: workoutBuilder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1215322546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215322545}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1008455817}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1215322547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215322545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71453887910db97409550fb2c875e696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorkoutBuilderUI
+  databaseManager: {fileID: 417369630}
+  builderPanel: {fileID: 356655175}
+  addExercisePanel: {fileID: 312276760}
+  workoutNameInput: {fileID: 1116225412}
+  searchInput: {fileID: 2022894297}
+  addedExercisesContent: {fileID: 1212840772}
+  popupExercisesContent: {fileID: 1153801739}
+  addExercisePrefab: {fileID: 1056539446290619095, guid: c0bd196c29778f2419f8d732a49d4921, type: 3}
+  deleteExercisePrefab: {fileID: 2064335895700892318, guid: 39c42916ee5360449b36c87caf685921, type: 3}
+  workoutsPageUI: {fileID: 1770462272}
 --- !u!1001 &1215764175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19068,7 +19252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1294509154
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19592,9 +19776,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1215322547}
         m_TargetAssemblyTypeName: WorkoutBuilderUI, Assembly-CSharp
-        m_MethodName: OpenForCreate
+        m_MethodName: OpenCreateButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20549,7 +20733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1400718182
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22552,21 +22736,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2119327793}
         m_TargetAssemblyTypeName: ExerciseDetailPageUI, Assembly-CSharp
-        m_MethodName: OnHistoryClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayClick
+        m_MethodName: historyButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23997,6 +24169,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696506056}
   m_CullTransparentMesh: 1
+--- !u!224 &1708791107 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7624409757095984253, guid: 77733d51c564ff540b280bcf20ddcb71, type: 3}
+  m_PrefabInstance: {fileID: 1580178950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1709586299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24439,21 +24616,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2119327793}
         m_TargetAssemblyTypeName: ExerciseDetailPageUI, Assembly-CSharp
-        m_MethodName: OnEditClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayClick
+        m_MethodName: editButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24992,6 +25157,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bdc8bf4f248f14eb990f48e8c2131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::logout
+--- !u!1 &1770462270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1770462271}
+  - component: {fileID: 1770462272}
+  m_Layer: 0
+  m_Name: workouts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1770462271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770462270}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1008455817}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1770462272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770462270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca49a416619f2ed4c89b83580c1b7b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorkoutsPageUI
+  workoutCardsContent: {fileID: 744955558}
+  workoutCardPrefab: {fileID: 3329878969479941887, guid: 0b51c4a1d54ba864098388e31d5dd6c1, type: 3}
+  detailsPageUI: {fileID: 1061819352}
 --- !u!1001 &1783213720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26456,21 +26668,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 629288309}
         m_TargetAssemblyTypeName: ExerciseDetailEditPageUI, Assembly-CSharp
-        m_MethodName: OnDiscardClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayClick
+        m_MethodName: discardButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26691,6 +26891,54 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1970770913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1970770914}
+  - component: {fileID: 1970770915}
+  m_Layer: 0
+  m_Name: exerciseHistory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1970770914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970770913}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1008455817}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1970770915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970770913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed536093502e6a48b5b209785dd9f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExerciseHistoryPageUI
+  pagePanel: {fileID: 1400718181}
+  exerciseNameText: {fileID: 593346208}
+  historyContent: {fileID: 136678154}
+  historyCardPrefab: {fileID: 6704722998790234875, guid: 7614aa72f83f46e45973a29a8762a56d, type: 3}
 --- !u!1 &1979880145
 GameObject:
   m_ObjectHideFlags: 0
@@ -28421,6 +28669,56 @@ MonoBehaviour:
   scrollViewContent: {fileID: 691853136}
   cardPrefab: {fileID: 2208664758754145120, guid: afaec1fdb2e6ad84d94afcc0aca3c9db, type: 3}
   Category: triceps
+--- !u!1 &2119327791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2119327792}
+  - component: {fileID: 2119327793}
+  m_Layer: 0
+  m_Name: exerciseDetails
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2119327792
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119327791}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1008455817}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2119327793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119327791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca2c358be1a27024ba8ca8fdce35ff44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExerciseDetailPageUI
+  pagePanel: {fileID: 1294509153}
+  exerciseNameText: {fileID: 1089989502}
+  setsContent: {fileID: 836252294}
+  setCardViewPrefab: {fileID: 389142601328938183, guid: 717b18142b4671644bf70a99deb4b37a, type: 3}
+  editPageUI: {fileID: 629288309}
+  historyPageUI: {fileID: 1970770915}
 --- !u!1001 &2124876151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29354,29 +29652,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1215322547}
         m_TargetAssemblyTypeName: WorkoutBuilderUI, Assembly-CSharp
-        m_MethodName: OpenAddExercisesPanel
-        m_Mode: 1
+        m_MethodName: AddPanelButton
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &6089557240238935897
 MonoBehaviour:
@@ -29592,21 +29878,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2119327793}
         m_TargetAssemblyTypeName: ExerciseDetailPageUI, Assembly-CSharp
-        m_MethodName: OnBackClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayClick
+        m_MethodName: backButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29976,3 +30250,4 @@ SceneRoots:
   - {fileID: 1371606427}
   - {fileID: 2007916992}
   - {fileID: 454251507}
+  - {fileID: 1008455817}

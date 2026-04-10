@@ -148,7 +148,6 @@ GameObject:
   - component: {fileID: 2200908995293509862}
   - component: {fileID: 8948896012074639083}
   - component: {fileID: 4380587583683370757}
-  - component: {fileID: 44988981490106626}
   - component: {fileID: 5388865194341007075}
   m_Layer: 5
   m_Name: workoutexercisecard
@@ -216,18 +215,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &44988981490106626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1396705146415052234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9ebd6537a80794408797ef9f6b22cd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrefabAudioTrigger
 --- !u!114 &5388865194341007075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,7 +350,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 44988981490106626}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PrefabAudioTrigger, Assembly-CSharp
         m_MethodName: TriggerSound
         m_Mode: 1
