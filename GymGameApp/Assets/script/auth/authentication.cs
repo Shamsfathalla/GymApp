@@ -3,14 +3,14 @@ using Firebase; // Core Firebase functionalities
 using Firebase.Auth; // Manages authentication operations
 using Firebase.Extensions; // Ensures Firebase tasks run safely on Unity's main thread
 using Firebase.Firestore; // For Firestore database operations
-using TMPro; // For text input fields and text display
-using UnityEngine.SceneManagement; // For switching between scenes 
+using TMPro; 
+using UnityEngine.SceneManagement; 
 
 public class authentication : MonoBehaviour
 {
-    private FirebaseAuth _auth;
-    private bool _firebaseReady = false;
-    private FirebaseFirestore _db;
+    private FirebaseAuth _auth; // Manages user authentication
+    private bool _firebaseReady = false; // Indicates if Firebase is initialized and ready to use
+    private FirebaseFirestore _db; // Firestore database instance for storing user data
 
     [Header("Login Fields")]
     public TMP_InputField loginEmail;

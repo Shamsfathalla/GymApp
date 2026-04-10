@@ -1,9 +1,9 @@
 using System.Collections.Generic; // For using List<T>
 using UnityEngine;
-using UnityEngine.UI; // For using UI components like Button
-using Firebase.Firestore; // For using Firestore database features
-using Firebase.Extensions; // Ensures Firebase tasks run safely on Unity's main thread
-using TMPro; // For TextMeshPro UI elements
+using UnityEngine.UI; 
+using Firebase.Firestore; 
+using Firebase.Extensions; 
+using TMPro; 
 
 public class exercisedetails : MonoBehaviour
 {
@@ -29,9 +29,9 @@ public class exercisedetails : MonoBehaviour
     }
 
     public void backButton()
-        {
+    {
             detailsPage.SetActive(false); // Hide the details page 
-        }
+    }
 
     public void LoadExercise(string documentId)
     {

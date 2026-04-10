@@ -1,7 +1,7 @@
 using UnityEngine;
-using Firebase.Firestore; // For using Firestore database
-using Firebase.Extensions; // Ensures Firebase tasks run safely on Unity's main thread
-using TMPro; // For TextMeshPro UI elements
+using Firebase.Firestore;
+using Firebase.Extensions; 
+using TMPro; 
 
 public class exerciselistloader : MonoBehaviour
 {
@@ -34,6 +34,7 @@ public class exerciselistloader : MonoBehaviour
             }
 
             QuerySnapshot snapshot = task.Result; // Get the query results
+            scrollViewContent.ClearChildren(); // Clear existing exercise cards from the scroll view
 
             foreach (DocumentSnapshot document in snapshot.Documents) // Loop through each exercise document
             {

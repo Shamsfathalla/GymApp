@@ -9,7 +9,7 @@ public class Station : MonoBehaviour
     // Opens the menu only if the player is physically standing withing the proximity of the station
     public void OpenMenu()
     {
-        if (PlayerCollidersRange > 0) ToggleMenu(true);
+        if (PlayerCollidersRange > 0) ToggleMenu(true); // Only open if the player is in range
     }
 
     public void CloseMenu() => ToggleMenu(false); // Close the menu button
