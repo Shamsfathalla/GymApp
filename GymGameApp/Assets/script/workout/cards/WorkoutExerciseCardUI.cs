@@ -16,6 +16,12 @@ public class WorkoutExerciseCardUI : MonoBehaviour
         
         openExerciseButton.onClick.AddListener(() => 
         {
+            // Play audio
+            if (audioManager.instance != null)
+            {
+                audioManager.instance.PlayClick();
+            }
+
             // Standard check to make sure the Action isn't empty before calling it
             if (onClickAction != null)
             {

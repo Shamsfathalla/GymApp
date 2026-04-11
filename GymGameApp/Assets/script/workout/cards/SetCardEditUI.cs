@@ -21,6 +21,12 @@ public class SetCardEditUI : MonoBehaviour
         deleteButton.onClick.RemoveAllListeners(); // Clear previous listeners to avoid multiple calls
         deleteButton.onClick.AddListener(() => 
         {
+            // Play audio
+            if (audioManager.instance != null)
+            {
+                audioManager.instance.PlayClick();
+            }
+            
             if (onDelete != null) 
             {
                 onDelete(this); // Notify the parent UI that this card should be deleted

@@ -502,6 +502,7 @@
 "Assets/Resources/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs"
 "Assets/Resources/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs"
 "Assets/Resources/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
+"Assets/script/audio/audiomanager.cs"
 "Assets/script/auth/authentication.cs"
 "Assets/script/auth/logout.cs"
 "Assets/script/auth/uimanager.cs"

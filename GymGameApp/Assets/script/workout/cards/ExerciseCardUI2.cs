@@ -22,6 +22,12 @@ public class ExerciseCardUI2 : MonoBehaviour
         actionButton.onClick.RemoveAllListeners(); // Clear previous listeners to avoid multiple calls
         actionButton.onClick.AddListener(() => 
         {
+            // Play audio
+            if (audioManager.instance != null)
+            {
+                audioManager.instance.PlayClick();
+            }
+
             if (isSelected) // If already selected, remove it from the workout
             {
                 builder.RemoveExercise(data.name); 

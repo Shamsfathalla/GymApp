@@ -1,0 +1,124 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="audioManager">
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+			<method name="PlayClick"/>
+		</type>
+		<type fullname="authentication">
+			<method name="Login"/>
+			<method name="SignUp"/>
+		</type>
+		<type fullname="ExerciseDetailEditPageUI">
+			<method name="addSetButton"/>
+			<method name="discardButton"/>
+			<method name="saveButton"/>
+		</type>
+		<type fullname="ExerciseDetailPageUI">
+			<method name="backButton"/>
+			<method name="editButton"/>
+			<method name="historyButton"/>
+		</type>
+		<type fullname="exercisedetails">
+			<method name="backButton"/>
+		</type>
+		<type fullname="ExerciseHistoryPageUI">
+			<method name="backButton"/>
+		</type>
+		<type fullname="logout">
+			<method name="Logout"/>
+		</type>
+		<type fullname="OpenTips">
+			<method name="CloseCanvas"/>
+			<method name="OpenCanvas"/>
+		</type>
+		<type fullname="PrefabAudioTrigger">
+			<method name="TriggerSound"/>
+			<method name="TriggerSound"/>
+			<method name="TriggerSound"/>
+			<method name="TriggerSound"/>
+			<method name="TriggerSound"/>
+			<method name="TriggerSound"/>
+		</type>
+		<type fullname="Station">
+			<method name="CloseMenu"/>
+			<method name="CloseMenu"/>
+			<method name="CloseMenu"/>
+			<method name="CloseMenu"/>
+			<method name="CloseMenu"/>
+			<method name="CloseMenu"/>
+			<method name="CloseMenu"/>
+			<method name="CloseMenu"/>
+			<method name="CloseMenu"/>
+			<method name="CloseMenu"/>
+		</type>
+		<type fullname="uimanager">
+			<method name="GoToLogin"/>
+			<method name="GoToSignup"/>
+		</type>
+		<type fullname="WorkoutBuilderUI">
+			<method name="AddPanelButton"/>
+			<method name="AddPanelButton"/>
+			<method name="DiscardWorkoutButton"/>
+			<method name="OpenCreateButton"/>
+			<method name="SaveWorkoutButton"/>
+		</type>
+		<type fullname="WorkoutDetailsPageUI">
+			<method name="backButton"/>
+			<method name="editButton"/>
+		</type>
+	</assembly>
+	<assembly fullname="Unity.RenderPipelines.Core.Runtime" ignoreIfMissing="1">
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerButton">
+			<method name="OnAction"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerIntField">
+			<method name="OnDecrement"/>
+			<method name="OnDecrement"/>
+			<method name="OnIncrement"/>
+			<method name="OnIncrement"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerObjectPopupField">
+			<method name="OnDecrement"/>
+			<method name="OnIncrement"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerPanel">
+			<method name="OnScrollbarClicked"/>
+			<method name="OnScrollbarClicked"/>
+			<method name="ResetDebugManager"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerUIntField">
+			<method name="OnDecrement"/>
+			<method name="OnDecrement"/>
+			<method name="OnIncrement"/>
+			<method name="OnIncrement"/>
+		</type>
+	</assembly>
+</linker>
