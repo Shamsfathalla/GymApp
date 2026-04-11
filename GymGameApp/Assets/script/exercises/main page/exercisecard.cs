@@ -21,6 +21,11 @@ public class exerciseCard : MonoBehaviour
 
     private void Details()
     {
+        if (audioManager.instance != null)
+        {
+            audioManager.instance.PlayClick(); // Play click sound when the view button is pressed
+        }
+
         Debug.Log("Load details for document ID: " + documentId);
         
         exercisedetails.Instance.LoadExercise(documentId); // Method to load exercise details using the document ID

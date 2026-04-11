@@ -21,9 +21,25 @@ public class WorkoutCardUI : MonoBehaviour
         }
 
         accessButton.onClick.RemoveAllListeners(); // Clear previous listeners to avoid multiple calls
-        accessButton.onClick.AddListener(() => pageUI.OpenWorkoutDetails(data)); 
+        accessButton.onClick.AddListener(() => 
+        {
+            // Play audio
+            if (audioManager.instance != null)
+            {
+                audioManager.instance.PlayClick();
+            }
+            pageUI.OpenWorkoutDetails(data);
+        });
 
         deleteButton.onClick.RemoveAllListeners();
-        deleteButton.onClick.AddListener(() => pageUI.DeleteWorkout(data.id)); 
+        deleteButton.onClick.AddListener(() => 
+        {
+            // Play audio
+            if (audioManager.instance != null)
+            {
+                audioManager.instance.PlayClick();
+            }
+            pageUI.DeleteWorkout(data.id);
+        });
     }
 }

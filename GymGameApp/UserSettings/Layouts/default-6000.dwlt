@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -306,9 +306,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 677
+    y: 668
     width: 1431
-    height: 357
+    height: 366
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -353,16 +353,16 @@ MonoBehaviour:
         m_PaneScroll: {x: 0, y: 0}
         m_ViewType: 0
         updateViewLive: 0
-        m_CurrentFrameIndex: 113610
+        m_CurrentFrameIndex: -1
         m_HierarchyOverruledThreadFromSelection: 0
         m_ProfilerViewFilteringOptions: 1
         m_FrameDataHierarchyView:
           m_Serialized: 1
           m_TreeViewState:
             scrollPos: {x: 0, y: 0}
-            m_SelectedIDs: 11000000
-            m_LastClickedID: 17
-            m_ExpandedIDs: 04000000070000000e000000130000001600000083000000
+            m_SelectedIDs: 02000000
+            m_LastClickedID: 2
+            m_ExpandedIDs: 05000000080000000f0000001400000017000000a3000000
             m_RenameOverlay:
               m_UserAcceptedRename: 0
               m_Name: 
@@ -1606,13 +1606,23 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs:
-      - m_Data: 58248
+      - m_Data: 54792
       m_LastClickedID:
-        m_Data: 58248
+        m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -1362
-      - m_Data: 58028
-      - m_Data: 58680
+      - m_Data: -81172
+      - m_Data: -80912
+      - m_Data: -79384
+      - m_Data: -79296
+      - m_Data: -45866
+      - m_Data: -44828
+      - m_Data: -37628
+      - m_Data: -34762
+      - m_Data: -1318
+      - m_Data: 52150
+      - m_Data: 81698
+      - m_Data: 81762
+      - m_Data: 81812
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2382,7 +2392,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/prefabs/cards
+    - Assets/script
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -2392,25 +2402,22 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 56
   m_LastFolders:
-  - Assets/prefabs/cards
+  - Assets/script
   m_LastFoldersGridSize: 56
   m_LastProjectPath: C:\Users\shams\uni\mobile\Test\GymGameApp
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 186}
+    scrollPos: {x: 0, y: 10}
     m_SelectedIDs:
-    - m_Data: 82078
+    - m_Data: 54374
     m_LastClickedID:
-      m_Data: 82078
+      m_Data: 54374
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 58908
-    - m_Data: 58910
-    - m_Data: 58912
-    - m_Data: 59104
-    - m_Data: 59118
+    - m_Data: 54372
+    - m_Data: 54376
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -2444,9 +2451,9 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 58908
-    - m_Data: 58910
-    - m_Data: 58912
+    - m_Data: 54372
+    - m_Data: 54374
+    - m_Data: 54376
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2474,8 +2481,8 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: 58248
-    m_LastClickedInstanceID: 58248
+    - m_Data: 54792
+    m_LastClickedInstanceID: 54792
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_Data: 78054
@@ -2628,7 +2635,7 @@ MonoBehaviour:
     m_DynamicPanelBehavior: 0
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 58248
+  m_LastSelectedObjectID: 54792
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52

@@ -9,10 +9,28 @@ public class Station : MonoBehaviour
     // Opens the menu only if the player is physically standing withing the proximity of the station
     public void OpenMenu()
     {
-        if (PlayerCollidersRange > 0) ToggleMenu(true); // Only open if the player is in range
+        if (PlayerCollidersRange > 0) 
+        {
+            // Play the audio
+            if (audioManager.instance != null)
+            {
+                audioManager.instance.PlayClick();
+            }
+
+            ToggleMenu(true); // Only open if the player is in range
+        }
     }
 
-    public void CloseMenu() => ToggleMenu(false); // Close the menu button
+    public void CloseMenu()
+    {
+        // Play the audio
+        if (audioManager.instance != null)
+        {
+            audioManager.instance.PlayClick();
+        }
+        
+        ToggleMenu(false); // Close the menu button
+    }
 
     private void ToggleMenu(bool isOpen)
     {
