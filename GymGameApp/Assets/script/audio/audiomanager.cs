@@ -26,7 +26,7 @@ public class audioManager : MonoBehaviour
     {
         if (clickSound != null) // Check if the click sound and audio source are assigned
         {
-            clickSound.Play(); // Play the click sound
+            clickSound.PlayOneShot(clickSound.clip); // Play the click sound without interruption
         }
     }
 }

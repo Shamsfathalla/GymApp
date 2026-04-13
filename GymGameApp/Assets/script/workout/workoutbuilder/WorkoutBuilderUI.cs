@@ -38,6 +38,7 @@ public class WorkoutBuilderUI : MonoBehaviour
 
     public void OpenCreateButton() 
     { 
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
         SetupBuilder(null, null, ""); 
     }
 
@@ -57,11 +58,13 @@ public class WorkoutBuilderUI : MonoBehaviour
 
     public void AddPanelButton(bool show) 
     { 
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
         addExercisePanel.SetActive(show); 
     }
     
     public void DiscardWorkoutButton() 
     { 
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
         builderPanel.SetActive(false); 
     }
 
@@ -115,6 +118,7 @@ public class WorkoutBuilderUI : MonoBehaviour
     // FIREBASE SAVING COMMUNICATION 
     public void SaveWorkoutButton()
     {
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
         string workoutName = workoutNameInput.text.Trim(); // Get the workout name from the input and trim any extra whitespace
         if (string.IsNullOrEmpty(workoutName)) return;  // Don't allow saving if the workout name is empty
 

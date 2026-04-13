@@ -84,7 +84,6 @@
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Universal.2D.Runtime">
 		<type fullname="UnityEngine.Rendering.Universal.Light2D" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.PixelPerfectCamera" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.Renderer2DData" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Universal.Runtime">

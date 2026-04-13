@@ -1109,13 +1109,6 @@
             "usedInScenes": []
         },
         {
-            "managedAssemblyName": "Unity.RenderPipelines.Universal.2D.Runtime.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.Rendering.Universal.PixelPerfectCamera",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
             "managedAssemblyName": "Unity.RenderPipelines.Universal.Runtime.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.Rendering.Universal.PostProcessData",

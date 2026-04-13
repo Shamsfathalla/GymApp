@@ -30,7 +30,8 @@ public class exercisedetails : MonoBehaviour
 
     public void backButton()
     {
-            detailsPage.SetActive(false); // Hide the details page 
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
+        detailsPage.SetActive(false); // Hide the details page 
     }
 
     public void LoadExercise(string documentId)

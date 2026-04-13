@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.company.retrogym.launcher-release-37:/mipmap-hdpi_app_icon_round.png.flat",
+        "source": "com.company.retrogym.launcher-main-38:/mipmap-hdpi/app_icon_round.png"
+    },
+    {
+        "merged": "com.company.retrogym.launcher-release-37:/mipmap-xhdpi_app_icon_round.png.flat",
+        "source": "com.company.retrogym.launcher-main-38:/mipmap-xhdpi/app_icon_round.png"
+    },
+    {
+        "merged": "com.company.retrogym.launcher-release-37:/mipmap-xxxhdpi_app_icon_round.png.flat",
+        "source": "com.company.retrogym.launcher-main-38:/mipmap-xxxhdpi/app_icon_round.png"
+    },
+    {
+        "merged": "com.company.retrogym.launcher-release-37:/mipmap-ldpi_app_icon.png.flat",
+        "source": "com.company.retrogym.launcher-main-38:/mipmap-ldpi/app_icon.png"
+    },
+    {
+        "merged": "com.company.retrogym.launcher-release-37:/mipmap-ldpi_app_icon_round.png.flat",
+        "source": "com.company.retrogym.launcher-main-38:/mipmap-ldpi/app_icon_round.png"
+    },
+    {
+        "merged": "com.company.retrogym.launcher-release-37:/mipmap-xxxhdpi_app_icon.png.flat",
+        "source": "com.company.retrogym.launcher-main-38:/mipmap-xxxhdpi/app_icon.png"
+    },
+    {
+        "merged": "com.company.retrogym.launcher-release-37:/mipmap-hdpi_app_icon.png.flat",
+        "source": "com.company.retrogym.launcher-main-38:/mipmap-hdpi/app_icon.png"
+    },
+    {
+        "merged": "com.company.retrogym.launcher-release-37:/mipmap-xxhdpi_app_icon.png.flat",
+        "source": "com.company.retrogym.launcher-main-38:/mipmap-xxhdpi/app_icon.png"
+    },
+    {
+        "merged": "com.company.retrogym.launcher-release-37:/mipmap-mdpi_app_icon.png.flat",
+        "source": "com.company.retrogym.launcher-main-38:/mipmap-mdpi/app_icon.png"
+    },
+    {
+        "merged": "com.company.retrogym.launcher-release-37:/mipmap-mdpi_app_icon_round.png.flat",
+        "source": "com.company.retrogym.launcher-main-38:/mipmap-mdpi/app_icon_round.png"
+    },
+    {
+        "merged": "com.company.retrogym.launcher-release-37:/mipmap-xhdpi_app_icon.png.flat",
+        "source": "com.company.retrogym.launcher-main-38:/mipmap-xhdpi/app_icon.png"
+    },
+    {
+        "merged": "com.company.retrogym.launcher-release-37:/mipmap-xxhdpi_app_icon_round.png.flat",
+        "source": "com.company.retrogym.launcher-main-38:/mipmap-xxhdpi/app_icon_round.png"
+    }
+]

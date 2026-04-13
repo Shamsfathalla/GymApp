@@ -6,11 +6,13 @@ public class OpenTips : MonoBehaviour
     
     public void OpenCanvas()
     {
-            targetCanvas.SetActive(true); //activates tips panel
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
+        targetCanvas.SetActive(true); //activates tips panel
     }
 
     public void CloseCanvas()
     {
-            targetCanvas.SetActive(false); //deactivates tips panel
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
+        targetCanvas.SetActive(false); //deactivates tips panel
     }
 }

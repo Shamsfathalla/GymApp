@@ -20,6 +20,7 @@ public class WorkoutDetailsPageUI : MonoBehaviour
     
     public void backButton() 
     { 
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
         detailsPanel.SetActive(false);
     }
 
@@ -113,6 +114,7 @@ public class WorkoutDetailsPageUI : MonoBehaviour
 
     public void editButton()
     {
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
         detailsPanel.SetActive(false);
         builderUI.OpenEditButton(currentWorkout, this);
     }

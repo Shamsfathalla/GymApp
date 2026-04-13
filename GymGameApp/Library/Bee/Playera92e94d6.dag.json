@@ -1556,8 +1556,7 @@
         1546,
         1547,
         1548,
-        1549,
-        1550
+        1549
       ],
       "DebugActionIndex": 0
     },
@@ -13450,26 +13449,39 @@
           "File": "Library/Bee/artifacts/Android/AsyncPluginsFromLinker"
         },
         {
-          "File": "Library/Bee/artifacts/Android/AsyncPluginsFromLinker/lib_burst_generated.so"
+          "File": "Library/Bee/artifacts/Android/AsyncPluginsFromLinker/arm64-v8a"
         },
         {
           "File": "Library/Bee/artifacts/Android/AsyncPluginsFromLinkerSymbols"
         }
       ],
+      "GlobSignatures": [
+        {
+          "Path": "Library/Bee/artifacts/Android/AsyncPluginsFromLinker"
+        },
+        {
+          "Path": "Library/Bee/artifacts/Android/AsyncPluginsFromLinker/arm64-v8a",
+          "Recurse": 1
+        },
+        {
+          "Path": "Library/Bee/artifacts/Android/AsyncPluginsFromLinkerSymbols",
+          "Recurse": 1
+        }
+      ],
       "DebugActionIndex": 170
     },
     {
-      "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/lib_burst_generated.so",
+      "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/lib_burst_generated.so",
       "DisplayName": "Copying lib_burst_generated.so",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/Bee/artifacts/Android/AsyncPluginsFromLinker/lib_burst_generated.so"
+        "Library/Bee/artifacts/Android/AsyncPluginsFromLinker/arm64-v8a/lib_burst_generated.so"
       ],
       "InputFlags": [
         0
       ],
       "Outputs": [
-        "C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/lib_burst_generated.so"
+        "C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/lib_burst_generated.so"
       ],
       "OutputFlags": [
         10
@@ -46309,27 +46321,6 @@
       "DebugActionIndex": 1373
     },
     {
-      "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/icallsummary.txt",
-      "DisplayName": "Copying icallsummary.txt",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/Bee/artifacts/Android/ManagedStripped/icallsummary.txt"
-      ],
-      "InputFlags": [
-        0
-      ],
-      "Outputs": [
-        "C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/icallsummary.txt"
-      ],
-      "OutputFlags": [
-        2
-      ],
-      "ToBuildDependencies": [
-        19
-      ],
-      "DebugActionIndex": 1374
-    },
-    {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Mono.Security.dll",
       "DisplayName": "Copying Mono.Security.dll",
       "ActionType": "CopyFiles",
@@ -46348,7 +46339,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1375
+      "DebugActionIndex": 1374
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/mscorlib.dll",
@@ -46369,7 +46360,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1376
+      "DebugActionIndex": 1375
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Configuration.dll",
@@ -46390,7 +46381,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1377
+      "DebugActionIndex": 1376
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Core.dll",
@@ -46411,7 +46402,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1378
+      "DebugActionIndex": 1377
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.dll",
@@ -46432,7 +46423,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1379
+      "DebugActionIndex": 1378
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Net.Http.dll",
@@ -46453,7 +46444,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1380
+      "DebugActionIndex": 1379
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Xml.dll",
@@ -46474,7 +46465,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1381
+      "DebugActionIndex": 1380
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.2D.Animation.Runtime.dll",
@@ -46495,7 +46486,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1382
+      "DebugActionIndex": 1381
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.2D.Animation.Runtime.pdb",
@@ -46516,7 +46507,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1383
+      "DebugActionIndex": 1382
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.2D.Common.Runtime.dll",
@@ -46537,7 +46528,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1384
+      "DebugActionIndex": 1383
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.2D.Common.Runtime.pdb",
@@ -46558,7 +46549,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1385
+      "DebugActionIndex": 1384
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.2D.SpriteShape.Runtime.dll",
@@ -46579,7 +46570,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1386
+      "DebugActionIndex": 1385
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.2D.SpriteShape.Runtime.pdb",
@@ -46600,7 +46591,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1387
+      "DebugActionIndex": 1386
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.Burst.dll",
@@ -46621,7 +46612,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1388
+      "DebugActionIndex": 1387
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.Burst.pdb",
@@ -46642,7 +46633,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1389
+      "DebugActionIndex": 1388
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.Burst.Unsafe.dll",
@@ -46663,7 +46654,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1390
+      "DebugActionIndex": 1389
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.Collections.dll",
@@ -46684,7 +46675,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1391
+      "DebugActionIndex": 1390
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.Collections.LowLevel.ILSupport.dll",
@@ -46705,7 +46696,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1392
+      "DebugActionIndex": 1391
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.Collections.pdb",
@@ -46726,7 +46717,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1393
+      "DebugActionIndex": 1392
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.InputSystem.dll",
@@ -46747,7 +46738,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1394
+      "DebugActionIndex": 1393
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.InputSystem.ForUI.dll",
@@ -46768,7 +46759,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1395
+      "DebugActionIndex": 1394
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.InputSystem.ForUI.pdb",
@@ -46789,7 +46780,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1396
+      "DebugActionIndex": 1395
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.InputSystem.pdb",
@@ -46810,7 +46801,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1397
+      "DebugActionIndex": 1396
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.InternalAPIEngineBridge.001.dll",
@@ -46831,7 +46822,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1398
+      "DebugActionIndex": 1397
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.InternalAPIEngineBridge.001.pdb",
@@ -46852,7 +46843,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1399
+      "DebugActionIndex": 1398
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.InternalAPIEngineBridge.004.dll",
@@ -46873,7 +46864,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1400
+      "DebugActionIndex": 1399
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.InternalAPIEngineBridge.004.pdb",
@@ -46894,7 +46885,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1401
+      "DebugActionIndex": 1400
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.Mathematics.dll",
@@ -46915,7 +46906,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1402
+      "DebugActionIndex": 1401
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.Mathematics.pdb",
@@ -46936,7 +46927,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1403
+      "DebugActionIndex": 1402
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.MemoryProfiler.dll",
@@ -46957,7 +46948,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1404
+      "DebugActionIndex": 1403
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.MemoryProfiler.pdb",
@@ -46978,7 +46969,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1405
+      "DebugActionIndex": 1404
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll",
@@ -46999,7 +46990,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1406
+      "DebugActionIndex": 1405
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.pdb",
@@ -47020,7 +47011,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1407
+      "DebugActionIndex": 1406
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.RenderPipelines.Core.Runtime.dll",
@@ -47041,7 +47032,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1408
+      "DebugActionIndex": 1407
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.RenderPipelines.Core.Runtime.pdb",
@@ -47062,7 +47053,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1409
+      "DebugActionIndex": 1408
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.RenderPipelines.Core.Runtime.Shared.dll",
@@ -47083,7 +47074,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1410
+      "DebugActionIndex": 1409
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.RenderPipelines.Core.Runtime.Shared.pdb",
@@ -47104,7 +47095,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1411
+      "DebugActionIndex": 1410
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.RenderPipelines.GPUDriven.Runtime.dll",
@@ -47125,7 +47116,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1412
+      "DebugActionIndex": 1411
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.RenderPipelines.GPUDriven.Runtime.pdb",
@@ -47146,7 +47137,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1413
+      "DebugActionIndex": 1412
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.RenderPipelines.Universal.2D.Runtime.dll",
@@ -47167,7 +47158,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1414
+      "DebugActionIndex": 1413
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.RenderPipelines.Universal.2D.Runtime.pdb",
@@ -47188,7 +47179,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1415
+      "DebugActionIndex": 1414
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.RenderPipelines.Universal.Runtime.dll",
@@ -47209,7 +47200,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1416
+      "DebugActionIndex": 1415
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.RenderPipelines.Universal.Runtime.pdb",
@@ -47230,7 +47221,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1417
+      "DebugActionIndex": 1416
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.TextMeshPro.dll",
@@ -47251,7 +47242,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1418
+      "DebugActionIndex": 1417
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.TextMeshPro.pdb",
@@ -47272,7 +47263,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1419
+      "DebugActionIndex": 1418
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.UnifiedRayTracing.Runtime.dll",
@@ -47293,7 +47284,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1420
+      "DebugActionIndex": 1419
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.UnifiedRayTracing.Runtime.pdb",
@@ -47314,7 +47305,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1421
+      "DebugActionIndex": 1420
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AdaptivePerformanceModule.dll",
@@ -47335,7 +47326,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1422
+      "DebugActionIndex": 1421
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AdaptivePerformanceModule.pdb",
@@ -47356,7 +47347,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1423
+      "DebugActionIndex": 1422
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AIModule.dll",
@@ -47377,7 +47368,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1424
+      "DebugActionIndex": 1423
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AIModule.pdb",
@@ -47398,7 +47389,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1425
+      "DebugActionIndex": 1424
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AndroidJNIModule.dll",
@@ -47419,7 +47410,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1426
+      "DebugActionIndex": 1425
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AndroidJNIModule.pdb",
@@ -47440,7 +47431,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1427
+      "DebugActionIndex": 1426
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AnimationModule.dll",
@@ -47461,7 +47452,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1428
+      "DebugActionIndex": 1427
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AnimationModule.pdb",
@@ -47482,7 +47473,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1429
+      "DebugActionIndex": 1428
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AssetBundleModule.dll",
@@ -47503,7 +47494,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1430
+      "DebugActionIndex": 1429
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AssetBundleModule.pdb",
@@ -47524,7 +47515,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1431
+      "DebugActionIndex": 1430
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AudioModule.dll",
@@ -47545,7 +47536,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1432
+      "DebugActionIndex": 1431
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AudioModule.pdb",
@@ -47566,7 +47557,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1433
+      "DebugActionIndex": 1432
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.CoreModule.dll",
@@ -47587,7 +47578,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1434
+      "DebugActionIndex": 1433
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.CoreModule.pdb",
@@ -47608,7 +47599,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1435
+      "DebugActionIndex": 1434
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.dll",
@@ -47629,7 +47620,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1436
+      "DebugActionIndex": 1435
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.GridModule.dll",
@@ -47650,7 +47641,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1437
+      "DebugActionIndex": 1436
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.GridModule.pdb",
@@ -47671,7 +47662,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1438
+      "DebugActionIndex": 1437
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.HierarchyCoreModule.dll",
@@ -47692,7 +47683,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1439
+      "DebugActionIndex": 1438
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.HierarchyCoreModule.pdb",
@@ -47713,7 +47704,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1440
+      "DebugActionIndex": 1439
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.ImageConversionModule.dll",
@@ -47734,7 +47725,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1441
+      "DebugActionIndex": 1440
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.ImageConversionModule.pdb",
@@ -47755,7 +47746,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1442
+      "DebugActionIndex": 1441
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.IMGUIModule.dll",
@@ -47776,7 +47767,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1443
+      "DebugActionIndex": 1442
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.IMGUIModule.pdb",
@@ -47797,7 +47788,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1444
+      "DebugActionIndex": 1443
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputForUIModule.dll",
@@ -47818,7 +47809,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1445
+      "DebugActionIndex": 1444
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputForUIModule.pdb",
@@ -47839,7 +47830,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1446
+      "DebugActionIndex": 1445
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputLegacyModule.dll",
@@ -47860,7 +47851,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1447
+      "DebugActionIndex": 1446
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputLegacyModule.pdb",
@@ -47881,7 +47872,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1448
+      "DebugActionIndex": 1447
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputModule.dll",
@@ -47902,7 +47893,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1449
+      "DebugActionIndex": 1448
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputModule.pdb",
@@ -47923,7 +47914,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1450
+      "DebugActionIndex": 1449
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.JSONSerializeModule.dll",
@@ -47944,7 +47935,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1451
+      "DebugActionIndex": 1450
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.JSONSerializeModule.pdb",
@@ -47965,7 +47956,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1452
+      "DebugActionIndex": 1451
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.MultiplayerModule.dll",
@@ -47986,7 +47977,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1453
+      "DebugActionIndex": 1452
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.MultiplayerModule.pdb",
@@ -48007,7 +47998,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1454
+      "DebugActionIndex": 1453
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.pdb",
@@ -48028,7 +48019,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1455
+      "DebugActionIndex": 1454
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.Physics2DModule.dll",
@@ -48049,7 +48040,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1456
+      "DebugActionIndex": 1455
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.Physics2DModule.pdb",
@@ -48070,7 +48061,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1457
+      "DebugActionIndex": 1456
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PhysicsModule.dll",
@@ -48091,7 +48082,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1458
+      "DebugActionIndex": 1457
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PhysicsModule.pdb",
@@ -48112,7 +48103,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1459
+      "DebugActionIndex": 1458
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PropertiesModule.dll",
@@ -48133,7 +48124,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1460
+      "DebugActionIndex": 1459
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PropertiesModule.pdb",
@@ -48154,7 +48145,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1461
+      "DebugActionIndex": 1460
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.RenderAs2DModule.dll",
@@ -48175,7 +48166,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1462
+      "DebugActionIndex": 1461
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.RenderAs2DModule.pdb",
@@ -48196,7 +48187,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1463
+      "DebugActionIndex": 1462
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SharedInternalsModule.dll",
@@ -48217,7 +48208,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1464
+      "DebugActionIndex": 1463
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SharedInternalsModule.pdb",
@@ -48238,7 +48229,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1465
+      "DebugActionIndex": 1464
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SpriteMaskModule.dll",
@@ -48259,7 +48250,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1466
+      "DebugActionIndex": 1465
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SpriteMaskModule.pdb",
@@ -48280,7 +48271,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1467
+      "DebugActionIndex": 1466
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SpriteShapeModule.dll",
@@ -48301,7 +48292,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1468
+      "DebugActionIndex": 1467
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SpriteShapeModule.pdb",
@@ -48322,7 +48313,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1469
+      "DebugActionIndex": 1468
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SubsystemsModule.dll",
@@ -48343,7 +48334,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1470
+      "DebugActionIndex": 1469
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SubsystemsModule.pdb",
@@ -48364,7 +48355,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1471
+      "DebugActionIndex": 1470
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TerrainModule.dll",
@@ -48385,7 +48376,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1472
+      "DebugActionIndex": 1471
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TerrainModule.pdb",
@@ -48406,7 +48397,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1473
+      "DebugActionIndex": 1472
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreFontEngineModule.dll",
@@ -48427,7 +48418,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1474
+      "DebugActionIndex": 1473
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreFontEngineModule.pdb",
@@ -48448,7 +48439,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1475
+      "DebugActionIndex": 1474
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreTextEngineModule.dll",
@@ -48469,7 +48460,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1476
+      "DebugActionIndex": 1475
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreTextEngineModule.pdb",
@@ -48490,7 +48481,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1477
+      "DebugActionIndex": 1476
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextRenderingModule.dll",
@@ -48511,7 +48502,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1478
+      "DebugActionIndex": 1477
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextRenderingModule.pdb",
@@ -48532,7 +48523,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1479
+      "DebugActionIndex": 1478
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TilemapModule.dll",
@@ -48553,7 +48544,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1480
+      "DebugActionIndex": 1479
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TilemapModule.pdb",
@@ -48574,7 +48565,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1481
+      "DebugActionIndex": 1480
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UI.dll",
@@ -48595,7 +48586,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1482
+      "DebugActionIndex": 1481
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UI.pdb",
@@ -48616,7 +48607,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1483
+      "DebugActionIndex": 1482
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIElementsModule.dll",
@@ -48637,7 +48628,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1484
+      "DebugActionIndex": 1483
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIElementsModule.pdb",
@@ -48658,7 +48649,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1485
+      "DebugActionIndex": 1484
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIModule.dll",
@@ -48679,7 +48670,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1486
+      "DebugActionIndex": 1485
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIModule.pdb",
@@ -48700,7 +48691,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1487
+      "DebugActionIndex": 1486
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
@@ -48721,7 +48712,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1488
+      "DebugActionIndex": 1487
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb",
@@ -48742,7 +48733,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1489
+      "DebugActionIndex": 1488
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityAnalyticsModule.dll",
@@ -48763,7 +48754,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1490
+      "DebugActionIndex": 1489
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityAnalyticsModule.pdb",
@@ -48784,7 +48775,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1491
+      "DebugActionIndex": 1490
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityConsentModule.dll",
@@ -48805,7 +48796,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1492
+      "DebugActionIndex": 1491
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityConsentModule.pdb",
@@ -48826,7 +48817,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1493
+      "DebugActionIndex": 1492
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityWebRequestModule.dll",
@@ -48847,7 +48838,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1494
+      "DebugActionIndex": 1493
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityWebRequestModule.pdb",
@@ -48868,7 +48859,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1495
+      "DebugActionIndex": 1494
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.VFXModule.dll",
@@ -48889,7 +48880,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1496
+      "DebugActionIndex": 1495
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.VFXModule.pdb",
@@ -48910,7 +48901,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1497
+      "DebugActionIndex": 1496
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.VRModule.dll",
@@ -48931,7 +48922,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1498
+      "DebugActionIndex": 1497
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.VRModule.pdb",
@@ -48952,7 +48943,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1499
+      "DebugActionIndex": 1498
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.XRModule.dll",
@@ -48973,7 +48964,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1500
+      "DebugActionIndex": 1499
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.XRModule.pdb",
@@ -48994,7 +48985,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1501
+      "DebugActionIndex": 1500
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityLinkerToEditorData.json",
@@ -49015,7 +49006,7 @@
       "ToBuildDependencies": [
         19
       ],
-      "DebugActionIndex": 1502
+      "DebugActionIndex": 1501
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/Resources/unity default resources",
@@ -49033,7 +49024,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1503
+      "DebugActionIndex": 1502
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/IntermediateFiles.txt_ri9j.info",
@@ -49050,7 +49041,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 1504
+      "DebugActionIndex": 1503
     },
     {
       "Annotation": "ActionGenerateProjectFiles Library/Bee/artifacts/Android/IntermediateFiles.txt (+48 others)",
@@ -49267,10 +49258,10 @@
         0
       ],
       "ToBuildDependencies": [
-        1504
+        1503
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1505
+      "DebugActionIndex": 1504
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/java/com/unity3d/player/UnityPlayerGameActivity.java",
@@ -49288,7 +49279,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1506
+      "DebugActionIndex": 1505
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/unity-classes.jar",
@@ -49306,7 +49297,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1507
+      "DebugActionIndex": 1506
     },
     {
       "Annotation": "SourceBuildPlayerFiles",
@@ -49316,14 +49307,14 @@
       "Outputs": [],
       "OutputFlags": [],
       "ToBuildDependencies": [
-        1507,
-        1532,
+        1506,
+        1531,
+        1541,
         1542,
         1543,
-        1544,
-        1545
+        1544
       ],
-      "DebugActionIndex": 1508
+      "DebugActionIndex": 1507
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/IntermediateLauncherManifestDiag.txt_4oyd.info",
@@ -49340,7 +49331,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 1509
+      "DebugActionIndex": 1508
     },
     {
       "Annotation": "Generate Manifests Library/Bee/artifacts/Android/Manifest/IntermediateLauncherManifestDiag.txt (+3 others)",
@@ -49622,10 +49613,10 @@
         165,
         167,
         169,
-        1509
+        1508
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1510
+      "DebugActionIndex": 1509
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/ids.xml",
@@ -49643,7 +49634,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1511
+      "DebugActionIndex": 1510
     },
     {
       "Annotation": "WriteText C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v21/styles.xml",
@@ -49660,7 +49651,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1512
+      "DebugActionIndex": 1511
     },
     {
       "Annotation": "WriteText C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v31/styles.xml",
@@ -49677,7 +49668,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1513
+      "DebugActionIndex": 1512
     },
     {
       "Annotation": "WriteText C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/styles.xml",
@@ -49694,7 +49685,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1514
+      "DebugActionIndex": 1513
     },
     {
       "Annotation": "WriteText C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/colors.xml",
@@ -49711,7 +49702,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1515
+      "DebugActionIndex": 1514
     },
     {
       "Annotation": "WriteText C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values/strings.xml",
@@ -49728,7 +49719,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1516
+      "DebugActionIndex": 1515
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/strings.xml",
@@ -49746,7 +49737,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1517
+      "DebugActionIndex": 1516
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v30/freeformwindow.xml",
@@ -49764,7 +49755,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1518
+      "DebugActionIndex": 1517
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/freeformwindow.xml",
@@ -49782,7 +49773,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1519
+      "DebugActionIndex": 1518
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon.png",
@@ -49800,7 +49791,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1520
+      "DebugActionIndex": 1519
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon.png",
@@ -49818,7 +49809,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1521
+      "DebugActionIndex": 1520
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon.png",
@@ -49836,7 +49827,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1522
+      "DebugActionIndex": 1521
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon.png",
@@ -49854,7 +49845,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1523
+      "DebugActionIndex": 1522
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon.png",
@@ -49872,7 +49863,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1524
+      "DebugActionIndex": 1523
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon.png",
@@ -49890,7 +49881,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1525
+      "DebugActionIndex": 1524
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon_round.png",
@@ -49908,7 +49899,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1526
+      "DebugActionIndex": 1525
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon_round.png",
@@ -49926,7 +49917,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1527
+      "DebugActionIndex": 1526
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon_round.png",
@@ -49944,7 +49935,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1528
+      "DebugActionIndex": 1527
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon_round.png",
@@ -49962,7 +49953,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1529
+      "DebugActionIndex": 1528
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon_round.png",
@@ -49980,7 +49971,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1530
+      "DebugActionIndex": 1529
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon_round.png",
@@ -49998,7 +49989,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1531
+      "DebugActionIndex": 1530
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libmain.so",
@@ -50016,7 +50007,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1532
+      "DebugActionIndex": 1531
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityClassRegistration.cpp_mied.info",
@@ -50033,7 +50024,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 1533
+      "DebugActionIndex": 1532
     },
     {
       "Annotation": "ClassRegistrationGenerator C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/artifacts/Android/il2cppOutput/UnityClassRegistration.cpp",
@@ -50131,10 +50122,10 @@
       ],
       "ToBuildDependencies": [
         19,
-        1533
+        1532
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1534
+      "DebugActionIndex": 1533
     },
     {
       "Annotation": "Compile UnityClassRegistration Library/Bee/artifacts/Android/libunity/arm64-v8a/UnityClassRegistration.o",
@@ -50157,10 +50148,10 @@
         2
       ],
       "ToBuildDependencies": [
-        1534
+        1533
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1535
+      "DebugActionIndex": 1534
     },
     {
       "Annotation": "ICallRegistrationGenerator C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/artifacts/Android/il2cppOutput/UnityICallRegistration.cpp",
@@ -50258,7 +50249,7 @@
         19
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1536
+      "DebugActionIndex": 1535
     },
     {
       "Annotation": "Compile UnityICallRegistration Library/Bee/artifacts/Android/libunity/arm64-v8a/UnityICallRegistration.o",
@@ -50281,10 +50272,10 @@
         2
       ],
       "ToBuildDependencies": [
-        1536
+        1535
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1537
+      "DebugActionIndex": 1536
     },
     {
       "Annotation": "Link libunity Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so",
@@ -50313,11 +50304,11 @@
         2
       ],
       "ToBuildDependencies": [
-        1535,
-        1537
+        1534,
+        1536
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1538
+      "DebugActionIndex": 1537
     },
     {
       "Annotation": "Generate Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so from Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so",
@@ -50338,10 +50329,10 @@
         2
       ],
       "ToBuildDependencies": [
-        1538
+        1537
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1539
+      "DebugActionIndex": 1538
     },
     {
       "Annotation": "Generate Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.sym.so from Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.sym.so",
@@ -50362,10 +50353,10 @@
         2
       ],
       "ToBuildDependencies": [
-        1539
+        1538
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1540
+      "DebugActionIndex": 1539
     },
     {
       "Annotation": "Stripping Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so -> Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so",
@@ -50386,10 +50377,10 @@
         2
       ],
       "ToBuildDependencies": [
-        1538
+        1537
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1541
+      "DebugActionIndex": 1540
     },
     {
       "Annotation": "Adding note Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so -> C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so",
@@ -50414,11 +50405,11 @@
         10
       ],
       "ToBuildDependencies": [
-        1540,
-        1541
+        1539,
+        1540
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1542
+      "DebugActionIndex": 1541
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libmain.so",
@@ -50436,7 +50427,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1543
+      "DebugActionIndex": 1542
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libil2cpp.so",
@@ -50457,7 +50448,7 @@
       "ToBuildDependencies": [
         857
       ],
-      "DebugActionIndex": 1544
+      "DebugActionIndex": 1543
     },
     {
       "Annotation": "CopyFiles C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libunity.so",
@@ -50476,9 +50467,9 @@
         10
       ],
       "ToBuildDependencies": [
-        1540
+        1539
       ],
-      "DebugActionIndex": 1545
+      "DebugActionIndex": 1544
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/unity_app_guid_rcp3.info",
@@ -50495,7 +50486,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 1546
+      "DebugActionIndex": 1545
     },
     {
       "Annotation": "GuidGenerator C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/unity_app_guid",
@@ -50562,10 +50553,10 @@
       "ToBuildDependencies": [
         6,
         173,
-        1546
+        1545
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1547
+      "DebugActionIndex": 1546
     },
     {
       "Annotation": "WriteText C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/resources/META-INF/com.android.games.engine.build_fingerprint",
@@ -50582,7 +50573,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 1548
+      "DebugActionIndex": 1547
     },
     {
       "Annotation": "ModifyAndroidProjectCallback C:/Users/shams/uni/mobile/Test/GymGameApp/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/AndroidManifest.xml (+8 others)",
@@ -50725,12 +50716,12 @@
         0
       ],
       "ToBuildDependencies": [
+        1504,
         1505,
         1506,
-        1507,
-        1510
+        1509
       ],
-      "DebugActionIndex": 1549
+      "DebugActionIndex": 1548
     },
     {
       "Annotation": "Player",
@@ -51472,10 +51463,10 @@
         1500,
         1501,
         1502,
-        1503,
+        1504,
         1505,
         1506,
-        1507,
+        1509,
         1510,
         1511,
         1512,
@@ -51498,16 +51489,15 @@
         1529,
         1530,
         1531,
-        1532,
+        1541,
         1542,
         1543,
         1544,
-        1545,
+        1546,
         1547,
-        1548,
-        1549
+        1548
       ],
-      "DebugActionIndex": 1550
+      "DebugActionIndex": 1549
     }
   ],
   "FileSignatures": [
@@ -52061,8 +52051,8 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "SourceBuildPlayerFiles": 1508,
-          "Player": 1550
+          "SourceBuildPlayerFiles": 1507,
+          "Player": 1549
         }
 ,  "DefaultNodes": [
     0

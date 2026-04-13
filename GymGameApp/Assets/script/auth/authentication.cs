@@ -9,7 +9,6 @@ using UnityEngine.SceneManagement;
 public class authentication : MonoBehaviour
 {
     private FirebaseAuth _auth; // Manages user authentication
-    private bool _firebaseReady = false; // Indicates if Firebase is initialized and ready to use
     private FirebaseFirestore _db; // Firestore database instance for storing user data
 
     [Header("Login Fields")]
@@ -28,9 +27,14 @@ public class authentication : MonoBehaviour
             {
                 // Initialize Firebase
                 _auth = FirebaseAuth.DefaultInstance;
-                _firebaseReady = true;
                 _db = FirebaseFirestore.DefaultInstance;
                 Debug.Log("Firebase is ready ");
+
+                if (_auth.CurrentUser != null)
+                {
+                    Debug.Log("User already signed in: " + _auth.CurrentUser.Email);
+                    SceneManager.LoadScene("gym"); // Jump directly to the gym scene
+                }
             }
             else
             {
@@ -43,6 +47,8 @@ public class authentication : MonoBehaviour
     // If successful, the user’s email is retrieved and confirmed
     public void SignUp()
     {
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
+        
         _auth.CreateUserWithEmailAndPasswordAsync(
             signupEmail.text.Trim(),
             signupPassword.text.Trim()
@@ -84,6 +90,8 @@ public class authentication : MonoBehaviour
     // Success confirms authentication and retrieves user information
     public void Login()
     {
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
+
         _auth.SignInWithEmailAndPasswordAsync(
             loginEmail.text.Trim(),
             loginPassword.text.Trim()

@@ -19,6 +19,7 @@ public class ExerciseDetailEditPageUI : MonoBehaviour
 
     public void discardButton() 
     { 
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
         pagePanel.SetActive(false); 
     }
 
@@ -44,6 +45,7 @@ public class ExerciseDetailEditPageUI : MonoBehaviour
 
     public void addSetButton()
     {
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
         CreateEditCard(new SetData { reps = 0, weight = 0 }); 
     }
 
@@ -65,6 +67,8 @@ public class ExerciseDetailEditPageUI : MonoBehaviour
 
     public void saveButton()
     {
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
+
         var currentuser = FirebaseAuth.DefaultInstance.CurrentUser; 
         if (currentuser == null) return;
 
