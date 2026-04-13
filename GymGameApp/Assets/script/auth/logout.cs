@@ -15,6 +15,8 @@ public class logout : MonoBehaviour
             Debug.Log("User logged out");
         }
         
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
+        
         // Loads the login scene
         SceneManager.LoadScene("auth"); 
     }

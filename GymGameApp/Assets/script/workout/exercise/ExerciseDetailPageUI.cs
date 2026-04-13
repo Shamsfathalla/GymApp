@@ -46,16 +46,19 @@ public class ExerciseDetailPageUI : MonoBehaviour
 
     public void editButton()
     {
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
         editPageUI.Open(currentData, this);
     }
 
     public void historyButton()
     {
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
         historyPageUI.Open(currentData);
     }
     
     public void backButton()
     {
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
         pagePanel.SetActive(false);
     }
 }

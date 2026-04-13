@@ -45,6 +45,7 @@ public class ExerciseHistoryPageUI : MonoBehaviour
 
     public void backButton()
     {
+        if (audioManager.instance != null) audioManager.instance.PlayClick();
         pagePanel.SetActive(false);
     }
 }
