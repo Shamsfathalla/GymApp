@@ -404,8 +404,6 @@ struct TMP_TextElement_t262A55214F712D4274485ABE5676E5254B84D0A5;
 struct TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233;
 struct TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333;
 struct TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D;
-struct TMP_TextInfoDebugTool_tC8728D25321C0091ECD61B136B0E3A5B4AB4B76F;
-struct TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294;
 struct TMPro_InstructionOverlay_t1CFD12C64F70D5D2FBE29466015C02776A406B62;
 struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572;
 struct TaskFactory_tF781BD37BE23917412AD83424D1497C7C1509DF0;
@@ -643,11 +641,9 @@ IL2CPP_EXTERN_C String_t* _stringLiteral4EF1082407AB7FA396C20E3A727CDE816EF576A2
 IL2CPP_EXTERN_C String_t* _stringLiteral51815BC8C04650A6FA7B3777A52302F02D563C6C;
 IL2CPP_EXTERN_C String_t* _stringLiteral5225EE496AAB278285733EDA00B46385A27F58CC;
 IL2CPP_EXTERN_C String_t* _stringLiteral55F097B2603C69F9353B2AE824F1FE43E6B46F87;
-IL2CPP_EXTERN_C String_t* _stringLiteral598081DBD06E8B1A338629AF7933F9131C6D33AB;
 IL2CPP_EXTERN_C String_t* _stringLiteral5A3D6FC5AC03F283E51A1E494164E2F6D006FCE2;
 IL2CPP_EXTERN_C String_t* _stringLiteral5A9AEFD32E63F4C4FEAE65BF93199A9A35785D51;
 IL2CPP_EXTERN_C String_t* _stringLiteral67C432D5B9035B7D2346FEDB3F19EF74B409D764;
-IL2CPP_EXTERN_C String_t* _stringLiteral6C3B90D0C27E620F9CB6F4530546C591AB0C5E12;
 IL2CPP_EXTERN_C String_t* _stringLiteral6D1FB7841575AA4158DE4E0A27C24CEDCCD683EF;
 IL2CPP_EXTERN_C String_t* _stringLiteral71B680ABF9213B3E8FB888056C235C79CFE83314;
 IL2CPP_EXTERN_C String_t* _stringLiteral71BD498E5FC7E3B8709294B88AB8FAB2CFF77CAE;
@@ -675,7 +671,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral9D329ACFC4F7EECCB821A7FEF99A0F23E1C721B7
 IL2CPP_EXTERN_C String_t* _stringLiteral9ECD13393A1BC799BB4763A4E4CD5B53E220C53A;
 IL2CPP_EXTERN_C String_t* _stringLiteralA0C6CFA116EC7EAEB84F1EC5BF99C296FD01B224;
 IL2CPP_EXTERN_C String_t* _stringLiteralA294DAD207C32424675CE40B7B7673FBE9C295B3;
-IL2CPP_EXTERN_C String_t* _stringLiteralA2EC275CC698277AF27C3AFD1084563679CC06EB;
 IL2CPP_EXTERN_C String_t* _stringLiteralA3DFC0C77ACADE0EE48DCC73E795A597D0270A73;
 IL2CPP_EXTERN_C String_t* _stringLiteralA6107EE62A5874EF8D2DEAC7D3C0A9F07B89E096;
 IL2CPP_EXTERN_C String_t* _stringLiteralA828F31F318D404AC147BA4EB0578963E251ADB4;
@@ -726,7 +721,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralF7F6CE5BBACA41DA11ED794602D3082DCA81ABEE
 IL2CPP_EXTERN_C String_t* _stringLiteralFB812A8DFFC38B5DCD7ACB23B1E6DECB35504ECE;
 IL2CPP_EXTERN_C String_t* _stringLiteralFC6687DC37346CD2569888E29764F727FAF530E0;
 IL2CPP_EXTERN_C String_t* _stringLiteralFDA32DC2E96C00474CE484C62A98501A5FB8786E;
-IL2CPP_EXTERN_C String_t* _stringLiteralFF988BE1271FBA06A4FB243CE21817E36A0AE666;
 IL2CPP_EXTERN_C const RuntimeMethod* ChatController_AddToChatOutput_m9AB8FA8A32EA23F2E55795D8301ED0BF6A59F722_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInParent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m5FB554DD7C0F662DAB84C0F292B221CAE3F0A5B3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInParent_TisStation_t81780CD061C2A27AE40A9C8239782F423E0B9DDB_mAC5DE28DDA553A074A462808620D07FE5F348625_RuntimeMethod_var;
@@ -785,7 +779,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisSetCardEditUI_tC
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisSetCardViewUI_t0EC4ACB0CD93C287EF96912B01D1484777BDA35D_mA2B32CF6BB19AB3504B0ECF27D1073E31345E261_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mA59A63181077B821132B53D44724D7F86C6FECB3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisTextContainer_t949A6EBEE5C8832723E73D8D3DCF4C8D0B3D7F3C_mA04134D48462B7543775CE11D71859B1D2A99872_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_m788ADD6C98FD3A1039F72A865AB7D335AEA6116F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisWorkoutCardUI_tA5C6D1C90978D94D14742E694DE0E1EE6EE14937_m38D4BBAF2DAFC6EF7826548E963AF039157F2098_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisWorkoutExerciseCardUI_t42DC642B76C0EF295C75CFD456CCDC83E8C57398_m9C7354BF8EE04971FA77D26D69BD5FC8281E56A1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisexerciseCard_t2281967DDD56D8EF2CA888BC41473CDCA6396007_mB755F80E034DADDEAF57674DB0663F1A2523FA58_RuntimeMethod_var;
@@ -907,7 +900,6 @@ struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3;
 
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
-struct Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259;
 struct KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B;
@@ -2874,9 +2866,6 @@ struct InputBinding_t0D75BD1538CF81D29450D568D5C938E111633EC5_marshaled_com
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
 };
-struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
-{
-};
 struct MulticastDelegate_t  : public Delegate_t
 {
 	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates;
@@ -3899,18 +3888,6 @@ struct TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333  : public 
 	int32_t ___m_lastCharIndex;
 	int32_t ___m_lastWordIndex;
 	int32_t ___m_lastLineIndex;
-};
-struct TMP_TextInfoDebugTool_tC8728D25321C0091ECD61B136B0E3A5B4AB4B76F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-};
-struct TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___m_TextMeshPro;
-	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___m_Camera;
-	bool ___m_isHoveringObject;
-	int32_t ___m_selectedLink;
-	int32_t ___m_lastCharIndex;
-	int32_t ___m_lastWordIndex;
 };
 struct TMPro_InstructionOverlay_t1CFD12C64F70D5D2FBE29466015C02776A406B62  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -5524,38 +5501,6 @@ struct WaitForSecondsU5BU5D_t2A9038ECB6E643745AEF2AD9A4F7FFD3D272186E  : public 
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
-struct Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259  : public RuntimeArray
-{
-	ALIGN_FIELD (8) Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B m_Items[1];
-
-	inline Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B* GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B* GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B value)
-	{
-		m_Items[index] = value;
-	}
-};
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeArray
 {
 	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
@@ -6076,6 +6021,10 @@ inline RuntimeObject* Dictionary_2_get_Item_m371FC5B3D39406E297F2626B159BA1A3E32
 {
 	return ((  RuntimeObject* (*) (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*, String_t*, const RuntimeMethod*))Dictionary_2_get_Item_m4AAAECBE902A211BF2126E6AFA280AEF73A3E0D6_gshared)(__this, ___0_key, method);
 }
+inline void List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, String_t* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, String_t*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
 inline bool Enumerator_MoveNext_m40ABB5D6C193C4D91C528B63297E307C4E41541D (Enumerator_t447A111D9E5E14AD9138BA667398D73EC2FE0022* __this, const RuntimeMethod* method)
 {
 	return ((  bool (*) (Enumerator_t447A111D9E5E14AD9138BA667398D73EC2FE0022*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
@@ -6094,10 +6043,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_RefreshPopupList_mA327B
 inline bool List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1 (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, String_t* ___0_item, const RuntimeMethod* method)
 {
 	return ((  bool (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, String_t*, const RuntimeMethod*))List_1_Contains_m4C9139C2A6B23E9343D3F87807B32C6E2CFE660D_gshared)(__this, ___0_item, method);
-}
-inline void List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, String_t* ___0_item, const RuntimeMethod* method)
-{
-	((  void (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, String_t*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
 }
 inline bool List_1_Remove_mD9E8CFB6777A99046B3C0195F7343FE771A2E99D (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, String_t* ___0_item, const RuntimeMethod* method)
 {
@@ -6577,15 +6522,6 @@ inline void UnityEvent_3_RemoveListener_mA451198DCB5DD86D0B87D256F26293566D20902
 {
 	((  void (*) (UnityEvent_3_t978FAA968D1FEECACADDD0969B822861FA0C6622*, UnityAction_3_tA4BA03B0D2CAB7D20E7006E36EF6B1D662432039*, const RuntimeMethod*))UnityEvent_3_RemoveListener_mB363F4B5EEE001BB8EB1B788D1CC30A1FB5CD41F_gshared)(__this, ___0_call, method);
 }
-inline TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* GameObject_GetComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_m788ADD6C98FD3A1039F72A865AB7D335AEA6116F (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
-{
-	return ((  TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mesh_set_colors32_m0E4462B7A1D613E6FB15DD7584BCE5491C17820F (Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* __this, Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RectTransformUtility_ScreenPointToWorldPointInRectangle_mA09F3D77E4731EF789E23E19D5CBA5EE5D1CF745 (RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___0_rect, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_screenPoint, Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___2_cam, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___3_worldPoint, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* TextMeshPro_get_transform_m750148EC362B176A0E80D6F4ABAC1062E5281E11 (TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Camera_WorldToScreenPoint_m26B4C8945C3B5731F1CC5944CFD96BF17126BAA3 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* Vector2_ToString_mC10F098442E56919947154402A77EDE28DC9B7BE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, String_t* ___0_format, RuntimeObject* ___1_formatProvider, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_Normalize_m52526AC1D25ED668DF8A5DE540769FA7D5671FC7 (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) ;
@@ -13054,12 +12990,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_OpenEditButton_m90C29C4
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m30896F8D1207AF787BD43B31273F022A3E7B89FC_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m40ABB5D6C193C4D91C528B63297E307C4E41541D_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m5EBC3AA83D4409407DF71488EC6310C7CBD5CAE3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m2996A6A6052B096C2571A3AC1D52782462A6257E_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCE18B047107AA23D1AA9B2ED32D316148E02655F);
 		s_Il2CppMethodInitialized = true;
 	}
 	Enumerator_t447A111D9E5E14AD9138BA667398D73EC2FE0022 V_0;
 	memset((&V_0), 0, sizeof(V_0));
+	String_t* V_1 = NULL;
 	{
 		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:47>
 		WorkoutData_t6E372A90D2F6B5E1B421B90B2CBEB6CB5F8DE6C2* L_0 = ___0_workout;
@@ -13076,7 +13014,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_OpenEditButton_m90C29C4
 		List_1_tE020B120302E34B781278C33685F2DA255337446* L_6 = L_5->___exercises;
 		if (!L_6)
 		{
-			goto IL_0059;
+			goto IL_0065;
 		}
 	}
 	{
@@ -13093,7 +13031,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_OpenEditButton_m90C29C4
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_004b:
+FINALLY_0057:
 			{
 				Enumerator_Dispose_m30896F8D1207AF787BD43B31273F022A3E7B89FC((&V_0), Enumerator_Dispose_m30896F8D1207AF787BD43B31273F022A3E7B89FC_RuntimeMethod_var);
 				return;
@@ -13102,7 +13040,7 @@ FINALLY_004b:
 		try
 		{
 			{
-				goto IL_0040_1;
+				goto IL_004c_1;
 			}
 
 IL_0029_1:
@@ -13117,20 +13055,26 @@ IL_0029_1:
 				NullCheck(L_11);
 				String_t* L_12;
 				L_12 = VirtualFuncInvoker0< String_t* >::Invoke(3, L_11);
+				V_1 = L_12;
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:54>
+				List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_13 = __this->___selectedExercises;
+				String_t* L_14 = V_1;
+				NullCheck(L_13);
+				List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline(L_13, L_14, List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
 			}
 
-IL_0040_1:
+IL_004c_1:
 			{
 				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:51>
-				bool L_13;
-				L_13 = Enumerator_MoveNext_m40ABB5D6C193C4D91C528B63297E307C4E41541D((&V_0), Enumerator_MoveNext_m40ABB5D6C193C4D91C528B63297E307C4E41541D_RuntimeMethod_var);
-				if (L_13)
+				bool L_15;
+				L_15 = Enumerator_MoveNext_m40ABB5D6C193C4D91C528B63297E307C4E41541D((&V_0), Enumerator_MoveNext_m40ABB5D6C193C4D91C528B63297E307C4E41541D_RuntimeMethod_var);
+				if (L_15)
 				{
 					goto IL_0029_1;
 				}
 			}
 			{
-				goto IL_0059;
+				goto IL_0065;
 			}
 		}
 		catch(Il2CppExceptionWrapper& e)
@@ -13139,11 +13083,11 @@ IL_0040_1:
 		}
 	}
 
-IL_0059:
+IL_0065:
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:56>
-		WorkoutBuilderUI_RefreshAddedExercisesList_m8F49CE31B0E8832FDD846C9BF3B5A3B94FE888C9(__this, NULL);
 		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:57>
+		WorkoutBuilderUI_RefreshAddedExercisesList_m8F49CE31B0E8832FDD846C9BF3B5A3B94FE888C9(__this, NULL);
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:58>
 		return;
 	}
 }
@@ -13158,7 +13102,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_AddPanelButton_m8CF9445
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:61>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:62>
 		audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13* L_0 = ((audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13_StaticFields*)il2cpp_codegen_static_fields_for(audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13_il2cpp_TypeInfo_var))->___instance;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -13169,7 +13113,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_AddPanelButton_m8CF9445
 		}
 	}
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:61>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:62>
 		audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13* L_2 = ((audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13_StaticFields*)il2cpp_codegen_static_fields_for(audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13_il2cpp_TypeInfo_var))->___instance;
 		NullCheck(L_2);
 		audioManager_PlayClick_m25701496232B1ED585ECED6029BE140BDFBD9AB0(L_2, NULL);
@@ -13177,12 +13121,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_AddPanelButton_m8CF9445
 
 IL_0017:
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:62>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:63>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___addExercisePanel;
 		bool L_4 = ___0_show;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, L_4, NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:63>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:64>
 		return;
 	}
 }
@@ -13197,7 +13141,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_DiscardWorkoutButton_m9
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:67>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:68>
 		audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13* L_0 = ((audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13_StaticFields*)il2cpp_codegen_static_fields_for(audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13_il2cpp_TypeInfo_var))->___instance;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -13208,7 +13152,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_DiscardWorkoutButton_m9
 		}
 	}
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:67>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:68>
 		audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13* L_2 = ((audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13_StaticFields*)il2cpp_codegen_static_fields_for(audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13_il2cpp_TypeInfo_var))->___instance;
 		NullCheck(L_2);
 		audioManager_PlayClick_m25701496232B1ED585ECED6029BE140BDFBD9AB0(L_2, NULL);
@@ -13216,11 +13160,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_DiscardWorkoutButton_m9
 
 IL_0017:
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:68>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:69>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___builderPanel;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:69>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:70>
 		return;
 	}
 }
@@ -13237,44 +13181,44 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_SetupBuilder_m191F95F25
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:74>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:75>
 		String_t* L_0 = ___0_id;
 		__this->___editingWorkoutId = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___editingWorkoutId), (void*)L_0);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:75>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:76>
 		WorkoutDetailsPageUI_t0561714F60097336786BF2F5CCEB1257DB617175* L_1 = ___1_page;
 		__this->___linkedDetailsPage = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___linkedDetailsPage), (void*)L_1);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:76>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:77>
 		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_2 = __this->___workoutNameInput;
 		String_t* L_3 = ___2_name;
 		NullCheck(L_2);
 		TMP_InputField_set_text_m684E9CDA2D9E82D1C497B5E03DBE79C00584FF62(L_2, L_3, NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:77>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:78>
 		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_4 = __this->___searchInput;
 		NullCheck(L_4);
 		TMP_InputField_set_text_m684E9CDA2D9E82D1C497B5E03DBE79C00584FF62(L_4, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:79>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:80>
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_5 = __this->___selectedExercises;
 		NullCheck(L_5);
 		List_1_Clear_mC6C7AEBB0F980A717A87C0D12377984A464F0934_inline(L_5, List_1_Clear_mC6C7AEBB0F980A717A87C0D12377984A464F0934_RuntimeMethod_var);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:80>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:81>
 		WorkoutBuilderUI_RefreshAddedExercisesList_m8F49CE31B0E8832FDD846C9BF3B5A3B94FE888C9(__this, NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:82>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:83>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___builderPanel;
 		NullCheck(L_6);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)1, NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:83>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:84>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___addExercisePanel;
 		NullCheck(L_7);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:86>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:87>
 		WorkoutDatabaseManager_tA4A8D70C1C4B14AA55EBC06C8D76AD6BD59362A0* L_8 = __this->___databaseManager;
 		Action_1_tD6D3810C49DACAE3AE520A7002E2CCAFC4537A3C* L_9 = (Action_1_tD6D3810C49DACAE3AE520A7002E2CCAFC4537A3C*)il2cpp_codegen_object_new(Action_1_tD6D3810C49DACAE3AE520A7002E2CCAFC4537A3C_il2cpp_TypeInfo_var);
 		Action_1__ctor_m36FCC61C3B4C101988D8623569D22E38BA48C803(L_9, __this, (intptr_t)((void*)WorkoutBuilderUI_OnExercisesLoaded_m5B51AFDDE690C2004AC5D918BE7AFD1EC3CC8014_RuntimeMethod_var), NULL);
 		NullCheck(L_8);
 		WorkoutDatabaseManager_LoadExercises_m23E8DDB991BC3684C2C3BF091B9BA047B9D987A6(L_8, L_9, NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:87>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:88>
 		return;
 	}
 }
@@ -13282,13 +13226,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_SetupBuilder_m191F95F25
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_OnExercisesLoaded_m5B51AFDDE690C2004AC5D918BE7AFD1EC3CC8014 (WorkoutBuilderUI_tDB2FEF69C4E86054C0A12BE471DBFD3656AADF30* __this, List_1_tE961CE5133AC17573EB88A03CBE7542249C2F9E2* ___0_loadedList, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:92>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:93>
 		List_1_tE961CE5133AC17573EB88A03CBE7542249C2F9E2* L_0 = ___0_loadedList;
 		__this->___allExercises = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___allExercises), (void*)L_0);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:93>
-		WorkoutBuilderUI_RefreshPopupList_mA327B1F0B3BF393ADEADACC2E484609FCFAAA482(__this, NULL);
 		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:94>
+		WorkoutBuilderUI_RefreshPopupList_mA327B1F0B3BF393ADEADACC2E484609FCFAAA482(__this, NULL);
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:95>
 		return;
 	}
 }
@@ -13303,7 +13247,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_AddExercise_m0D7976A682
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:100>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:101>
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_0 = __this->___selectedExercises;
 		ExerciseData_t5F217DD552073FCC10938B30B32C46A5D7DDBDE8* L_1 = ___0_exercise;
 		NullCheck(L_1);
@@ -13317,22 +13261,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_AddExercise_m0D7976A682
 		}
 	}
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:102>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:103>
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_4 = __this->___selectedExercises;
 		ExerciseData_t5F217DD552073FCC10938B30B32C46A5D7DDBDE8* L_5 = ___0_exercise;
 		NullCheck(L_5);
 		String_t* L_6 = L_5->___name;
 		NullCheck(L_4);
 		List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline(L_4, L_6, List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:103>
-		WorkoutBuilderUI_RefreshAddedExercisesList_m8F49CE31B0E8832FDD846C9BF3B5A3B94FE888C9(__this, NULL);
 		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:104>
+		WorkoutBuilderUI_RefreshAddedExercisesList_m8F49CE31B0E8832FDD846C9BF3B5A3B94FE888C9(__this, NULL);
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:105>
 		WorkoutBuilderUI_RefreshPopupList_mA327B1F0B3BF393ADEADACC2E484609FCFAAA482(__this, NULL);
 	}
 
 IL_0030:
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:106>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:107>
 		return;
 	}
 }
@@ -13346,7 +13290,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_RemoveExercise_m7C56A22
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:111>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:112>
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_0 = __this->___selectedExercises;
 		String_t* L_1 = ___0_exerciseName;
 		NullCheck(L_0);
@@ -13358,15 +13302,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_RemoveExercise_m7C56A22
 		}
 	}
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:113>
-		WorkoutBuilderUI_RefreshAddedExercisesList_m8F49CE31B0E8832FDD846C9BF3B5A3B94FE888C9(__this, NULL);
 		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:114>
+		WorkoutBuilderUI_RefreshAddedExercisesList_m8F49CE31B0E8832FDD846C9BF3B5A3B94FE888C9(__this, NULL);
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:115>
 		WorkoutBuilderUI_RefreshPopupList_mA327B1F0B3BF393ADEADACC2E484609FCFAAA482(__this, NULL);
 	}
 
 IL_001a:
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:116>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:117>
 		return;
 	}
 }
@@ -13399,7 +13343,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_SaveWorkoutButton_m2741
 	memset((&V_2), 0, sizeof(V_2));
 	String_t* V_3 = NULL;
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:121>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:122>
 		audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13* L_0 = ((audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13_StaticFields*)il2cpp_codegen_static_fields_for(audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13_il2cpp_TypeInfo_var))->___instance;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -13410,7 +13354,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_SaveWorkoutButton_m2741
 		}
 	}
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:121>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:122>
 		audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13* L_2 = ((audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13_StaticFields*)il2cpp_codegen_static_fields_for(audioManager_t4D19496126B7D00B1C38E60E3AD941595D9BEF13_il2cpp_TypeInfo_var))->___instance;
 		NullCheck(L_2);
 		audioManager_PlayClick_m25701496232B1ED585ECED6029BE140BDFBD9AB0(L_2, NULL);
@@ -13418,7 +13362,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_SaveWorkoutButton_m2741
 
 IL_0017:
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:122>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:123>
 		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_3 = __this->___workoutNameInput;
 		NullCheck(L_3);
 		String_t* L_4;
@@ -13427,7 +13371,7 @@ IL_0017:
 		String_t* L_5;
 		L_5 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_4, NULL);
 		V_0 = L_5;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:123>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:124>
 		String_t* L_6 = V_0;
 		bool L_7;
 		L_7 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_6, NULL);
@@ -13437,17 +13381,17 @@ IL_0017:
 		}
 	}
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:123>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:124>
 		return;
 	}
 
 IL_0031:
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:126>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:127>
 		List_1_tE020B120302E34B781278C33685F2DA255337446* L_8 = (List_1_tE020B120302E34B781278C33685F2DA255337446*)il2cpp_codegen_object_new(List_1_tE020B120302E34B781278C33685F2DA255337446_il2cpp_TypeInfo_var);
 		List_1__ctor_mB0CFC5E35B840AE25C5F2B640B98E5D9CE401B08(L_8, List_1__ctor_mB0CFC5E35B840AE25C5F2B640B98E5D9CE401B08_RuntimeMethod_var);
 		V_1 = L_8;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:128>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:129>
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_9 = __this->___selectedExercises;
 		NullCheck(L_9);
 		Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1 L_10;
@@ -13472,11 +13416,11 @@ FINALLY_006f:
 
 IL_0045_1:
 			{
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:128>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:129>
 				String_t* L_11;
 				L_11 = Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_inline((&V_2), Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_RuntimeMethod_var);
 				V_3 = L_11;
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:130>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:131>
 				List_1_tE020B120302E34B781278C33685F2DA255337446* L_12 = V_1;
 				Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_13 = (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)il2cpp_codegen_object_new(Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
 				Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9(L_13, Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
@@ -13490,7 +13434,7 @@ IL_0045_1:
 
 IL_0064_1:
 			{
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:128>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:129>
 				bool L_16;
 				L_16 = Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED((&V_2), Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED_RuntimeMethod_var);
 				if (L_16)
@@ -13510,7 +13454,7 @@ IL_0064_1:
 
 IL_007d:
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:134>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:135>
 		WorkoutDatabaseManager_tA4A8D70C1C4B14AA55EBC06C8D76AD6BD59362A0* L_17 = __this->___databaseManager;
 		String_t* L_18 = __this->___editingWorkoutId;
 		String_t* L_19 = V_0;
@@ -13519,7 +13463,7 @@ IL_007d:
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_21, __this, (intptr_t)((void*)WorkoutBuilderUI_FinishSaving_mDD84599A9537C82C1D83EA796B228259A62BE1A2_RuntimeMethod_var), NULL);
 		NullCheck(L_17);
 		WorkoutDatabaseManager_SaveWorkout_m7FD8F980EABA951EFFF6B8674DA4EE85B6931A28(L_17, L_18, L_19, L_20, L_21, NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:135>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:136>
 		return;
 	}
 }
@@ -13549,7 +13493,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_FinishSaving_mDD84599A9
 	memset((&V_1), 0, sizeof(V_1));
 	String_t* V_2 = NULL;
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:139>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:140>
 		WorkoutsPageUI_tB632B25F9CE128BC115020DF70DA418AD89829B5* L_0 = __this->___workoutsPageUI;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -13560,7 +13504,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_FinishSaving_mDD84599A9
 		}
 	}
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:139>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:140>
 		WorkoutsPageUI_tB632B25F9CE128BC115020DF70DA418AD89829B5* L_2 = __this->___workoutsPageUI;
 		NullCheck(L_2);
 		WorkoutsPageUI_LoadWorkouts_mB286DCF4574DF48D557184AD5559C4CB374D7A90(L_2, NULL);
@@ -13568,11 +13512,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_FinishSaving_mDD84599A9
 
 IL_0019:
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:140>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:141>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___builderPanel;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:142>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:143>
 		WorkoutDetailsPageUI_t0561714F60097336786BF2F5CCEB1257DB617175* L_4 = __this->___linkedDetailsPage;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_5;
@@ -13583,11 +13527,11 @@ IL_0019:
 		}
 	}
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:145>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:146>
 		List_1_tE020B120302E34B781278C33685F2DA255337446* L_6 = (List_1_tE020B120302E34B781278C33685F2DA255337446*)il2cpp_codegen_object_new(List_1_tE020B120302E34B781278C33685F2DA255337446_il2cpp_TypeInfo_var);
 		List_1__ctor_mB0CFC5E35B840AE25C5F2B640B98E5D9CE401B08(L_6, List_1__ctor_mB0CFC5E35B840AE25C5F2B640B98E5D9CE401B08_RuntimeMethod_var);
 		V_0 = L_6;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:146>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:147>
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_7 = __this->___selectedExercises;
 		NullCheck(L_7);
 		Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1 L_8;
@@ -13612,11 +13556,11 @@ FINALLY_0074:
 
 IL_004a_1:
 			{
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:146>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:147>
 				String_t* L_9;
 				L_9 = Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_inline((&V_1), Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_RuntimeMethod_var);
 				V_2 = L_9;
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:149>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:150>
 				List_1_tE020B120302E34B781278C33685F2DA255337446* L_10 = V_0;
 				Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_11 = (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)il2cpp_codegen_object_new(Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
 				Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9(L_11, Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
@@ -13630,7 +13574,7 @@ IL_004a_1:
 
 IL_0069_1:
 			{
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:146>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:147>
 				bool L_14;
 				L_14 = Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED((&V_1), Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED_RuntimeMethod_var);
 				if (L_14)
@@ -13650,11 +13594,11 @@ IL_0069_1:
 
 IL_0082:
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:153>
 		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:154>
 		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:155>
 		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:156>
 		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:157>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:158>
 		WorkoutDetailsPageUI_t0561714F60097336786BF2F5CCEB1257DB617175* L_15 = __this->___linkedDetailsPage;
 		WorkoutData_t6E372A90D2F6B5E1B421B90B2CBEB6CB5F8DE6C2* L_16 = (WorkoutData_t6E372A90D2F6B5E1B421B90B2CBEB6CB5F8DE6C2*)il2cpp_codegen_object_new(WorkoutData_t6E372A90D2F6B5E1B421B90B2CBEB6CB5F8DE6C2_il2cpp_TypeInfo_var);
 		WorkoutData__ctor_mE0C9E24CC6F063E6308FCA21F634FCA7FB534D6E(L_16, NULL);
@@ -13685,7 +13629,7 @@ IL_0082:
 
 IL_00bb:
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:159>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:160>
 		return;
 	}
 }
@@ -13709,10 +13653,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_RefreshAddedExercisesLi
 	memset((&V_0), 0, sizeof(V_0));
 	String_t* V_1 = NULL;
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:164>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:165>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___addedExercisesContent;
 		UIExtensions_ClearChildren_m54FA7F81E4B786A0041B03B378541DF7D26EFC08(L_0, NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:166>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:167>
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_1 = __this->___selectedExercises;
 		NullCheck(L_1);
 		Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1 L_2;
@@ -13737,17 +13681,17 @@ FINALLY_0055:
 
 IL_0019_1:
 			{
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:166>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:167>
 				String_t* L_3;
 				L_3 = Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_inline((&V_0), Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_RuntimeMethod_var);
 				V_1 = L_3;
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:168>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:169>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___deleteExercisePrefab;
 				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___addedExercisesContent;
 				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
 				L_6 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_4, L_5, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:169>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:170>
 				NullCheck(L_6);
 				ExerciseCardUI2_t5ADDF9173E9468F7BE92A4D79FCD84F7901B60D9* L_7;
 				L_7 = GameObject_GetComponent_TisExerciseCardUI2_t5ADDF9173E9468F7BE92A4D79FCD84F7901B60D9_mBB5F2F6B360E3BEB07580AC4752BE21D4FE4F1BD(L_6, GameObject_GetComponent_TisExerciseCardUI2_t5ADDF9173E9468F7BE92A4D79FCD84F7901B60D9_mBB5F2F6B360E3BEB07580AC4752BE21D4FE4F1BD_RuntimeMethod_var);
@@ -13764,7 +13708,7 @@ IL_0019_1:
 
 IL_004a_1:
 			{
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:166>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:167>
 				bool L_11;
 				L_11 = Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED((&V_0), Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED_RuntimeMethod_var);
 				if (L_11)
@@ -13784,7 +13728,7 @@ IL_004a_1:
 
 IL_0063:
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:171>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:172>
 		return;
 	}
 }
@@ -13811,10 +13755,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_RefreshPopupList_mA327B
 	bool V_3 = false;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* G_B8_0 = NULL;
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:175>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:176>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___popupExercisesContent;
 		UIExtensions_ClearChildren_m54FA7F81E4B786A0041B03B378541DF7D26EFC08(L_0, NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:176>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:177>
 		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_1 = __this->___searchInput;
 		NullCheck(L_1);
 		String_t* L_2;
@@ -13826,7 +13770,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkoutBuilderUI_RefreshPopupList_mA327B
 		String_t* L_4;
 		L_4 = String_ToLower_m6191ABA3DC514ED47C10BDA23FD0DDCEAE7ACFBD(L_3, NULL);
 		V_0 = L_4;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:178>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:179>
 		List_1_tE961CE5133AC17573EB88A03CBE7542249C2F9E2* L_5 = __this->___allExercises;
 		NullCheck(L_5);
 		Enumerator_tC40FC3F89044A79962B01C651735DD9A7A2F2972 L_6;
@@ -13851,11 +13795,11 @@ FINALLY_00a0:
 
 IL_002f_1:
 			{
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:178>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:179>
 				ExerciseData_t5F217DD552073FCC10938B30B32C46A5D7DDBDE8* L_7;
 				L_7 = Enumerator_get_Current_m57F5C84525B24A763DDFC8A8FF781C9AD671E44C_inline((&V_1), Enumerator_get_Current_m57F5C84525B24A763DDFC8A8FF781C9AD671E44C_RuntimeMethod_var);
 				V_2 = L_7;
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:181>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:182>
 				String_t* L_8 = V_0;
 				bool L_9;
 				L_9 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_8, NULL);
@@ -13892,7 +13836,7 @@ IL_002f_1:
 
 IL_005a_1:
 			{
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:183>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:184>
 				List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_17 = __this->___selectedExercises;
 				ExerciseData_t5F217DD552073FCC10938B30B32C46A5D7DDBDE8* L_18 = V_2;
 				NullCheck(L_18);
@@ -13901,7 +13845,7 @@ IL_005a_1:
 				bool L_20;
 				L_20 = List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1(L_17, L_19, List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1_RuntimeMethod_var);
 				V_3 = L_20;
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:184>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:185>
 				bool L_21 = V_3;
 				if (L_21)
 				{
@@ -13922,12 +13866,12 @@ IL_0077_1:
 
 IL_007d_1:
 			{
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:186>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:187>
 				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_24 = __this->___popupExercisesContent;
 				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25;
 				L_25 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(G_B8_0, L_24, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:187>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:188>
 				NullCheck(L_25);
 				ExerciseCardUI2_t5ADDF9173E9468F7BE92A4D79FCD84F7901B60D9* L_26;
 				L_26 = GameObject_GetComponent_TisExerciseCardUI2_t5ADDF9173E9468F7BE92A4D79FCD84F7901B60D9_mBB5F2F6B360E3BEB07580AC4752BE21D4FE4F1BD(L_25, GameObject_GetComponent_TisExerciseCardUI2_t5ADDF9173E9468F7BE92A4D79FCD84F7901B60D9_mBB5F2F6B360E3BEB07580AC4752BE21D4FE4F1BD_RuntimeMethod_var);
@@ -13939,7 +13883,7 @@ IL_007d_1:
 
 IL_0095_1:
 			{
-				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:178>
+				//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:179>
 				bool L_29;
 				L_29 = Enumerator_MoveNext_mF592AF6B322AC64C0CD094CC337FB39EB7442865((&V_1), Enumerator_MoveNext_mF592AF6B322AC64C0CD094CC337FB39EB7442865_RuntimeMethod_var);
 				if (L_29)
@@ -13959,7 +13903,7 @@ IL_0095_1:
 
 IL_00ae:
 	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:190>
+		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/script/workout/workoutbuilder/WorkoutBuilderUI.cs:191>
 		return;
 	}
 }
@@ -26035,582 +25979,6 @@ IL_0025:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck__ctor_m8F6CDB8774BDF6C6B909919393AC0290BA2BB0AF (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, const RuntimeMethod* method) 
 {
 	{
-		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// Method Definition Index: 69420
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextInfoDebugTool__ctor_m54C6EE99B1DC2B4DE1F8E870974B3B41B970C37E (TMP_TextInfoDebugTool_tC8728D25321C0091ECD61B136B0E3A5B4AB4B76F* __this, const RuntimeMethod* method) 
-{
-	{
-		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// Method Definition Index: 69421
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_Awake_m662ED2E3CDB7AE16174109344A01A50AF3C44797 (TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_m788ADD6C98FD3A1039F72A865AB7D335AEA6116F_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:22>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
-		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		NullCheck(L_0);
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_1;
-		L_1 = GameObject_GetComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_m788ADD6C98FD3A1039F72A865AB7D335AEA6116F(L_0, GameObject_GetComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_m788ADD6C98FD3A1039F72A865AB7D335AEA6116F_RuntimeMethod_var);
-		__this->___m_TextMeshPro = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextMeshPro), (void*)L_1);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:23>
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_2;
-		L_2 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
-		__this->___m_Camera = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Camera), (void*)L_2);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:26>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_3 = __this->___m_TextMeshPro;
-		NullCheck(L_3);
-		VirtualActionInvoker2< bool, bool >::Invoke(106, L_3, (bool)0, (bool)0);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:27>
-		return;
-	}
-}
-// Method Definition Index: 69422
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_LateUpdate_m1A711EC87962C6C5A7157414CD059D984D3BD55B (TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RectTransformUtility_t65C00A84A72F17D78B81F2E7D88C2AA98AB61244_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TMP_TextUtilities_tD7ED516E31C2AA0EB607D587C0BB0FE71A8BB934_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C3B90D0C27E620F9CB6F4530546C591AB0C5E12);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFF988BE1271FBA06A4FB243CE21817E36A0AE666);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	int32_t V_1 = 0;
-	int32_t V_2 = 0;
-	int32_t V_3 = 0;
-	int32_t V_4 = 0;
-	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B V_5;
-	memset((&V_5), 0, sizeof(V_5));
-	Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* V_6 = NULL;
-	TMP_LinkInfo_t9DC08E8BF8C5E8094AFF8C9FB3C251AF88B92DA6 V_7;
-	memset((&V_7), 0, sizeof(V_7));
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_8;
-	memset((&V_8), 0, sizeof(V_8));
-	String_t* V_9 = NULL;
-	TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 V_10;
-	memset((&V_10), 0, sizeof(V_10));
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_11;
-	memset((&V_11), 0, sizeof(V_11));
-	Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* V_12 = NULL;
-	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B V_13;
-	memset((&V_13), 0, sizeof(V_13));
-	int32_t V_14 = 0;
-	int32_t V_15 = 0;
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:32>
-		__this->___m_isHoveringObject = (bool)0;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:34>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_0 = __this->___m_TextMeshPro;
-		NullCheck(L_0);
-		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_1;
-		L_1 = TMP_Text_get_rectTransform_m22DC10116809BEB2C66047A55337A588ED023EBF(L_0, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
-		L_2 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_3;
-		L_3 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
-		il2cpp_codegen_runtime_class_init_inline(TMP_TextUtilities_tD7ED516E31C2AA0EB607D587C0BB0FE71A8BB934_il2cpp_TypeInfo_var);
-		bool L_4;
-		L_4 = TMP_TextUtilities_IsIntersectingRectTransform_m6AAA4D9F7266A54E014CA2A6BC5A37FB32CE7CC5(L_1, L_2, L_3, NULL);
-		if (!L_4)
-		{
-			goto IL_002a;
-		}
-	}
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:36>
-		__this->___m_isHoveringObject = (bool)1;
-	}
-
-IL_002a:
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:39>
-		bool L_5 = __this->___m_isHoveringObject;
-		if (!L_5)
-		{
-			goto IL_0358;
-		}
-	}
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:42>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_6 = __this->___m_TextMeshPro;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
-		L_7 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_8;
-		L_8 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
-		il2cpp_codegen_runtime_class_init_inline(TMP_TextUtilities_tD7ED516E31C2AA0EB607D587C0BB0FE71A8BB934_il2cpp_TypeInfo_var);
-		int32_t L_9;
-		L_9 = TMP_TextUtilities_FindIntersectingCharacter_m89C20D1FB440DECC3C06670B457A707B6DB36453(L_6, L_7, L_8, (bool)1, NULL);
-		V_0 = L_9;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:43>
-		int32_t L_10 = V_0;
-		if ((((int32_t)L_10) == ((int32_t)(-1))))
-		{
-			goto IL_015b;
-		}
-	}
-	{
-		int32_t L_11 = V_0;
-		int32_t L_12 = __this->___m_lastCharIndex;
-		if ((((int32_t)L_11) == ((int32_t)L_12)))
-		{
-			goto IL_015b;
-		}
-	}
-	{
-		bool L_13;
-		L_13 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)304), NULL);
-		if (L_13)
-		{
-			goto IL_007a;
-		}
-	}
-	{
-		bool L_14;
-		L_14 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)303), NULL);
-		if (!L_14)
-		{
-			goto IL_015b;
-		}
-	}
-
-IL_007a:
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:47>
-		int32_t L_15 = V_0;
-		__this->___m_lastCharIndex = L_15;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:49>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_16 = __this->___m_TextMeshPro;
-		NullCheck(L_16);
-		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_17;
-		L_17 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_16, NULL);
-		NullCheck(L_17);
-		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_18 = L_17->___characterInfo;
-		int32_t L_19 = V_0;
-		NullCheck(L_18);
-		int32_t L_20 = ((L_18)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_19)))->___materialReferenceIndex;
-		V_3 = L_20;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:51>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_21 = __this->___m_TextMeshPro;
-		NullCheck(L_21);
-		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_22;
-		L_22 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_21, NULL);
-		NullCheck(L_22);
-		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_23 = L_22->___characterInfo;
-		int32_t L_24 = V_0;
-		NullCheck(L_23);
-		int32_t L_25 = ((L_23)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_24)))->___vertexIndex;
-		V_4 = L_25;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:53>
-		int32_t L_26;
-		L_26 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)255), NULL);
-		int32_t L_27;
-		L_27 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)255), NULL);
-		int32_t L_28;
-		L_28 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)255), NULL);
-		Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline((&V_5), (uint8_t)((int32_t)(uint8_t)L_26), (uint8_t)((int32_t)(uint8_t)L_27), (uint8_t)((int32_t)(uint8_t)L_28), (uint8_t)((int32_t)255), NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:55>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_29 = __this->___m_TextMeshPro;
-		NullCheck(L_29);
-		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_30;
-		L_30 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_29, NULL);
-		NullCheck(L_30);
-		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_31 = L_30->___meshInfo;
-		int32_t L_32 = V_3;
-		NullCheck(L_31);
-		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_33 = ((L_31)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_32)))->___colors32;
-		V_6 = L_33;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:57>
-		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_34 = V_6;
-		int32_t L_35 = V_4;
-		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_36 = V_5;
-		NullCheck(L_34);
-		(L_34)->SetAt(static_cast<il2cpp_array_size_t>(L_35), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_36);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:58>
-		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_37 = V_6;
-		int32_t L_38 = V_4;
-		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_39 = V_5;
-		NullCheck(L_37);
-		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_38, 1))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_39);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:59>
-		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_40 = V_6;
-		int32_t L_41 = V_4;
-		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_42 = V_5;
-		NullCheck(L_40);
-		(L_40)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_41, 2))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_42);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:60>
-		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_43 = V_6;
-		int32_t L_44 = V_4;
-		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_45 = V_5;
-		NullCheck(L_43);
-		(L_43)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_44, 3))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_45);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:63>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_46 = __this->___m_TextMeshPro;
-		NullCheck(L_46);
-		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_47;
-		L_47 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_46, NULL);
-		NullCheck(L_47);
-		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_48 = L_47->___meshInfo;
-		int32_t L_49 = V_3;
-		NullCheck(L_48);
-		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_50 = ((L_48)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_49)))->___mesh;
-		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_51 = V_6;
-		NullCheck(L_50);
-		Mesh_set_colors32_m0E4462B7A1D613E6FB15DD7584BCE5491C17820F(L_50, L_51, NULL);
-	}
-
-IL_015b:
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:69>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_52 = __this->___m_TextMeshPro;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53;
-		L_53 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_54 = __this->___m_Camera;
-		il2cpp_codegen_runtime_class_init_inline(TMP_TextUtilities_tD7ED516E31C2AA0EB607D587C0BB0FE71A8BB934_il2cpp_TypeInfo_var);
-		int32_t L_55;
-		L_55 = TMP_TextUtilities_FindIntersectingLink_mC752442B8650D5146505B5C18C7D92B681D276E9(L_52, L_53, L_54, NULL);
-		V_1 = L_55;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:72>
-		int32_t L_56 = V_1;
-		if ((!(((uint32_t)L_56) == ((uint32_t)(-1)))))
-		{
-			goto IL_017f;
-		}
-	}
-	{
-		int32_t L_57 = __this->___m_selectedLink;
-		if ((!(((uint32_t)L_57) == ((uint32_t)(-1)))))
-		{
-			goto IL_0188;
-		}
-	}
-
-IL_017f:
-	{
-		int32_t L_58 = V_1;
-		int32_t L_59 = __this->___m_selectedLink;
-		if ((((int32_t)L_58) == ((int32_t)L_59)))
-		{
-			goto IL_018f;
-		}
-	}
-
-IL_0188:
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:75>
-		__this->___m_selectedLink = (-1);
-	}
-
-IL_018f:
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:79>
-		int32_t L_60 = V_1;
-		if ((((int32_t)L_60) == ((int32_t)(-1))))
-		{
-			goto IL_0202;
-		}
-	}
-	{
-		int32_t L_61 = V_1;
-		int32_t L_62 = __this->___m_selectedLink;
-		if ((((int32_t)L_61) == ((int32_t)L_62)))
-		{
-			goto IL_0202;
-		}
-	}
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:81>
-		int32_t L_63 = V_1;
-		__this->___m_selectedLink = L_63;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:83>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_64 = __this->___m_TextMeshPro;
-		NullCheck(L_64);
-		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_65;
-		L_65 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_64, NULL);
-		NullCheck(L_65);
-		TMP_LinkInfoU5BU5D_tE11BE54A5923BD2148E716289F44EA465E06536E* L_66 = L_65->___linkInfo;
-		int32_t L_67 = V_1;
-		NullCheck(L_66);
-		int32_t L_68 = L_67;
-		TMP_LinkInfo_t9DC08E8BF8C5E8094AFF8C9FB3C251AF88B92DA6 L_69 = (L_66)->GetAt(static_cast<il2cpp_array_size_t>(L_68));
-		V_7 = L_69;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:90>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_70 = __this->___m_TextMeshPro;
-		NullCheck(L_70);
-		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_71;
-		L_71 = TMP_Text_get_rectTransform_m22DC10116809BEB2C66047A55337A588ED023EBF(L_70, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72;
-		L_72 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_73;
-		L_73 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_72, NULL);
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_74 = __this->___m_Camera;
-		il2cpp_codegen_runtime_class_init_inline(RectTransformUtility_t65C00A84A72F17D78B81F2E7D88C2AA98AB61244_il2cpp_TypeInfo_var);
-		bool L_75;
-		L_75 = RectTransformUtility_ScreenPointToWorldPointInRectangle_mA09F3D77E4731EF789E23E19D5CBA5EE5D1CF745(L_71, L_73, L_74, (&V_8), NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:92>
-		String_t* L_76;
-		L_76 = TMP_LinkInfo_GetLinkID_mCC9D9E783D606660A4D15E0E746E1E27AD9C2425((&V_7), NULL);
-		V_9 = L_76;
-		String_t* L_77 = V_9;
-		bool L_78;
-		L_78 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_77, _stringLiteral6C3B90D0C27E620F9CB6F4530546C591AB0C5E12, NULL);
-		if (L_78)
-		{
-			goto IL_0202;
-		}
-	}
-	{
-		String_t* L_79 = V_9;
-		bool L_80;
-		L_80 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_79, _stringLiteralFF988BE1271FBA06A4FB243CE21817E36A0AE666, NULL);
-	}
-
-IL_0202:
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:111>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_81 = __this->___m_TextMeshPro;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_82;
-		L_82 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_83;
-		L_83 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
-		il2cpp_codegen_runtime_class_init_inline(TMP_TextUtilities_tD7ED516E31C2AA0EB607D587C0BB0FE71A8BB934_il2cpp_TypeInfo_var);
-		int32_t L_84;
-		L_84 = TMP_TextUtilities_FindIntersectingWord_m93E6DBCA2781A67271E7D0F8906CA0488CA08EB2(L_81, L_82, L_83, NULL);
-		V_2 = L_84;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:112>
-		int32_t L_85 = V_2;
-		if ((((int32_t)L_85) == ((int32_t)(-1))))
-		{
-			goto IL_0358;
-		}
-	}
-	{
-		int32_t L_86 = V_2;
-		int32_t L_87 = __this->___m_lastWordIndex;
-		if ((((int32_t)L_86) == ((int32_t)L_87)))
-		{
-			goto IL_0358;
-		}
-	}
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:114>
-		int32_t L_88 = V_2;
-		__this->___m_lastWordIndex = L_88;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:116>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_89 = __this->___m_TextMeshPro;
-		NullCheck(L_89);
-		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_90;
-		L_90 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_89, NULL);
-		NullCheck(L_90);
-		TMP_WordInfoU5BU5D_tD1759E5A84DCCCD42B718D79E953E72A432BB4DC* L_91 = L_90->___wordInfo;
-		int32_t L_92 = V_2;
-		NullCheck(L_91);
-		int32_t L_93 = L_92;
-		TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 L_94 = (L_91)->GetAt(static_cast<il2cpp_array_size_t>(L_93));
-		V_10 = L_94;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:118>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_95 = __this->___m_TextMeshPro;
-		NullCheck(L_95);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_96;
-		L_96 = TextMeshPro_get_transform_m750148EC362B176A0E80D6F4ABAC1062E5281E11(L_95, NULL);
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_97 = __this->___m_TextMeshPro;
-		NullCheck(L_97);
-		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_98;
-		L_98 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_97, NULL);
-		NullCheck(L_98);
-		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_99 = L_98->___characterInfo;
-		TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 L_100 = V_10;
-		int32_t L_101 = L_100.___firstCharacterIndex;
-		NullCheck(L_99);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_102 = ((L_99)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_101)))->___bottomLeft;
-		NullCheck(L_96);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_103;
-		L_103 = Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44(L_96, L_102, NULL);
-		V_11 = L_103;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:119>
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_104;
-		L_104 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_105 = V_11;
-		NullCheck(L_104);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_106;
-		L_106 = Camera_WorldToScreenPoint_m26B4C8945C3B5731F1CC5944CFD96BF17126BAA3(L_104, L_105, NULL);
-		V_11 = L_106;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:123>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_107 = __this->___m_TextMeshPro;
-		NullCheck(L_107);
-		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_108;
-		L_108 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_107, NULL);
-		NullCheck(L_108);
-		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_109 = L_108->___meshInfo;
-		NullCheck(L_109);
-		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_110 = ((L_109)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___colors32;
-		V_12 = L_110;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:125>
-		int32_t L_111;
-		L_111 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)255), NULL);
-		int32_t L_112;
-		L_112 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)255), NULL);
-		int32_t L_113;
-		L_113 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)255), NULL);
-		Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline((&V_13), (uint8_t)((int32_t)(uint8_t)L_111), (uint8_t)((int32_t)(uint8_t)L_112), (uint8_t)((int32_t)(uint8_t)L_113), (uint8_t)((int32_t)255), NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:126>
-		V_14 = 0;
-		goto IL_033b;
-	}
-
-IL_02dd:
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:128>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_114 = __this->___m_TextMeshPro;
-		NullCheck(L_114);
-		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_115;
-		L_115 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_114, NULL);
-		NullCheck(L_115);
-		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_116 = L_115->___characterInfo;
-		TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 L_117 = V_10;
-		int32_t L_118 = L_117.___firstCharacterIndex;
-		int32_t L_119 = V_14;
-		NullCheck(L_116);
-		int32_t L_120 = ((L_116)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_118, L_119)))))->___vertexIndex;
-		V_15 = L_120;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:130>
-		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_121 = V_12;
-		int32_t L_122 = V_15;
-		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_123 = V_13;
-		NullCheck(L_121);
-		(L_121)->SetAt(static_cast<il2cpp_array_size_t>(L_122), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_123);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:131>
-		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_124 = V_12;
-		int32_t L_125 = V_15;
-		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_126 = V_13;
-		NullCheck(L_124);
-		(L_124)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_125, 1))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_126);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:132>
-		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_127 = V_12;
-		int32_t L_128 = V_15;
-		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_129 = V_13;
-		NullCheck(L_127);
-		(L_127)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_128, 2))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_129);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:133>
-		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_130 = V_12;
-		int32_t L_131 = V_15;
-		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_132 = V_13;
-		NullCheck(L_130);
-		(L_130)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_131, 3))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_132);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:126>
-		int32_t L_133 = V_14;
-		V_14 = ((int32_t)il2cpp_codegen_add(L_133, 1));
-	}
-
-IL_033b:
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:126>
-		int32_t L_134 = V_14;
-		TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 L_135 = V_10;
-		int32_t L_136 = L_135.___characterCount;
-		if ((((int32_t)L_134) < ((int32_t)L_136)))
-		{
-			goto IL_02dd;
-		}
-	}
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:136>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_137 = __this->___m_TextMeshPro;
-		NullCheck(L_137);
-		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_138;
-		L_138 = VirtualFuncInvoker0< Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* >::Invoke(77, L_137);
-		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_139 = V_12;
-		NullCheck(L_138);
-		Mesh_set_colors32_m0E4462B7A1D613E6FB15DD7584BCE5491C17820F(L_138, L_139, NULL);
-	}
-
-IL_0358:
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:140>
-		return;
-	}
-}
-// Method Definition Index: 69423
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_OnPointerEnter_m747F05CBEF90BF713BF726E47CA37DC86D9B439A (TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA2EC275CC698277AF27C3AFD1084563679CC06EB);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:145>
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralA2EC275CC698277AF27C3AFD1084563679CC06EB, NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:146>
-		__this->___m_isHoveringObject = (bool)1;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:147>
-		return;
-	}
-}
-// Method Definition Index: 69424
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_OnPointerExit_m5D7D8A07591506FB7291E84A951AB5C43DAA5503 (TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral598081DBD06E8B1A338629AF7933F9131C6D33AB);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:152>
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral598081DBD06E8B1A338629AF7933F9131C6D33AB, NULL);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:153>
-		__this->___m_isHoveringObject = (bool)0;
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:154>
-		return;
-	}
-}
-// Method Definition Index: 69425
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A__ctor_m4C56A438A3140D5CF9C7AFB8466E11142F4FA3BE (TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294* __this, const RuntimeMethod* method) 
-{
-	{
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:16>
-		__this->___m_selectedLink = (-1);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:17>
-		__this->___m_lastCharIndex = (-1);
-		//<source_info:C:/Users/shams/uni/mobile/Test/GymGameApp/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:18>
-		__this->___m_lastWordIndex = (-1);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}

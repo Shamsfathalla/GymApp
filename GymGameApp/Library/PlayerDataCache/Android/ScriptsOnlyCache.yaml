@@ -389,6 +389,12 @@ ScriptsOnlyBuild:
     fullTypeName: Station
     methodName: CloseMenu
   - assembly: Assembly-CSharp
+    fullTypeName: WorkoutBuilderUI
+    methodName: AddPanelButton
+  - assembly: Assembly-CSharp
+    fullTypeName: Station
+    methodName: CloseMenu
+  - assembly: Assembly-CSharp
     fullTypeName: Station
     methodName: CloseMenu
   - assembly: Assembly-CSharp
@@ -409,12 +415,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: OpenTips
     methodName: CloseCanvas
-  - assembly: Assembly-CSharp
-    fullTypeName: WorkoutBuilderUI
-    methodName: AddPanelButton
-  - assembly: Assembly-CSharp
-    fullTypeName: Station
-    methodName: CloseMenu
   - assembly: Assembly-CSharp
     fullTypeName: Station
     methodName: CloseMenu
