@@ -51,6 +51,7 @@ public class WorkoutBuilderUI : MonoBehaviour
             foreach (Dictionary<string, object> ex in workout.exercises) // The workout data only has exercise names, so we just extract those and add them to the selected list
             {
                 string exerciseName = ex["name"].ToString(); // Extract the exercise name from the dictionary
+                selectedExercises.Add(exerciseName); // Add the exercise name to the selected exercises list
             }
         }
         RefreshAddedExercisesList(); // Refresh the added exercises list to show the pre-filled exercises
