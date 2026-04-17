@@ -31,45 +31,51 @@ public class WorkoutBuilderUI : MonoBehaviour
 
     private void Start() 
     { 
-        searchInput.onValueChanged.AddListener(_ => RefreshPopupList()); 
+        searchInput.onValueChanged.AddListener(OnSearchValueChanged); // Load exercises when the builder is opened for the first time
     } 
 
-    // BUTTONS
+    private void OnSearchValueChanged(string value)
+    {
+        RefreshPopupList();
+    }
 
+    // BUTTONS
     public void OpenCreateButton() 
     { 
-        if (audioManager.instance != null) audioManager.instance.PlayClick();
+        audioManager.instance.PlayClick();
+
         SetupBuilder(null, null, ""); 
     }
 
     public void OpenEditButton(WorkoutData workout, WorkoutDetailsPageUI detailsPage) 
     {
-        SetupBuilder(workout.id, detailsPage, workout.name);  // Pre-fill the name input, and store the workout ID and details page reference for later
+        SetupBuilder(workout.id, detailsPage, workout.name);  // Load selected exercises from the workout data
         
         if (workout.exercises != null)
         {
-            foreach (Dictionary<string, object> ex in workout.exercises) // The workout data only has exercise names, so we just extract those and add them to the selected list
+            foreach (Dictionary<string, object> ex in workout.exercises) // Convert exercise dictionaries to list of exercise names
             {
-                string exerciseName = ex["name"].ToString(); // Extract the exercise name from the dictionary
-                selectedExercises.Add(exerciseName); // Add the exercise name to the selected exercises list
+                string exerciseName = ex["name"].ToString(); 
+                selectedExercises.Add(exerciseName); 
             }
         }
-        RefreshAddedExercisesList(); // Refresh the added exercises list to show the pre-filled exercises
+        RefreshAddedExercisesList(); 
     }
 
     public void AddPanelButton(bool show) 
     { 
-        if (audioManager.instance != null) audioManager.instance.PlayClick();
+        audioManager.instance.PlayClick();
+
         addExercisePanel.SetActive(show); 
     }
     
     public void DiscardWorkoutButton() 
     { 
-        if (audioManager.instance != null) audioManager.instance.PlayClick();
+        audioManager.instance.PlayClick();
+
         builderPanel.SetActive(false); 
     }
 
-    // Setup the builder for either creating a new workout (id = null) or editing an existing one (id = workout's ID). Also takes in the details page reference so we can update it after saving, and the workout name to pre-fill the name input if editing.
     private void SetupBuilder(string id, WorkoutDetailsPageUI page, string name)
     {
         editingWorkoutId = id;
@@ -77,28 +83,24 @@ public class WorkoutBuilderUI : MonoBehaviour
         workoutNameInput.text = name;
         searchInput.text = ""; 
         
-        selectedExercises.Clear(); 
+        selectedExercises.Clear(); // Clear selected exercises list before loading new workout data
         RefreshAddedExercisesList(); 
         
         builderPanel.SetActive(true);
         addExercisePanel.SetActive(false);
         
-        // Ask the database manager to load, and tell it to run "OnExercisesLoaded" when done
         databaseManager.LoadExercises(OnExercisesLoaded);
     }
 
-    // Load the full list of exercises from the database, store it locally, and refresh the popup list to show them
     private void OnExercisesLoaded(List<ExerciseData> loadedList)
     {
         allExercises = loadedList;
         RefreshPopupList();
     }
 
-    // ADDING AND REMOVING EXERCISES
     public void AddExercise(ExerciseData exercise) 
     { 
-        // Only add the exercise if it's not already in the selected list
-        if (!selectedExercises.Contains(exercise.name))
+        if (selectedExercises.Contains(exercise.name) == false)
         {
             selectedExercises.Add(exercise.name); 
             RefreshAddedExercisesList();
@@ -108,84 +110,115 @@ public class WorkoutBuilderUI : MonoBehaviour
 
     public void RemoveExercise(string exerciseName) 
     { 
-        // Only remove the exercise if it's actually in the selected list 
-        if (selectedExercises.Remove(exerciseName))
+        if (selectedExercises.Remove(exerciseName) == true)
         {
             RefreshAddedExercisesList();
             RefreshPopupList();
         }
     }
 
-    // FIREBASE SAVING COMMUNICATION 
     public void SaveWorkoutButton()
     {
-        if (audioManager.instance != null) audioManager.instance.PlayClick();
-        string workoutName = workoutNameInput.text.Trim(); // Get the workout name from the input and trim any extra whitespace
-        if (string.IsNullOrEmpty(workoutName)) return;  // Don't allow saving if the workout name is empty
+        audioManager.instance.PlayClick();
 
-        // Convert the list of selected exercise names into the format expected by the database script (a list of dictionaries with "name" keys)
-        List<Dictionary<string, object>> exerciseList = new List<Dictionary<string, object>>();
-        // The workout data only has exercise names, so we just convert our list of selected exercise names into the expected format
+        string workoutName = workoutNameInput.text;  
+        
+        if (workoutName == null || workoutName == "") 
+        {
+            return;  
+        }
+
+        List<Dictionary<string, object>> exerciseList = new List<Dictionary<string, object>>(); // Convert list of exercise names to list of exercise dictionaries for saving
+        
+        // For loop to convert exercise names to dictionaries with "name" key
         foreach (string exName in selectedExercises)
         {
-            exerciseList.Add(new Dictionary<string, object> { { "name", exName } });
+            Dictionary<string, object> newExercise = new Dictionary<string, object>();
+            newExercise.Add("name", exName);
+
+            exerciseList.Add(newExercise);
         }
         
-        // Pass the data to the database script, and tell it to run FinishSaving when done!
-        databaseManager.SaveWorkout(editingWorkoutId, workoutName, exerciseList, FinishSaving);
+        databaseManager.SaveWorkout(editingWorkoutId, workoutName, exerciseList, FinishSaving); // Save workout to database, then call FinishSaving to update UI and return to details page
     }
 
     private void FinishSaving()
     {
-        if (workoutsPageUI != null) workoutsPageUI.LoadWorkouts();  // Tell the workouts page to refresh its workout list, so the new/edited workout will show up there immediately
+        if (workoutsPageUI != null) 
+        {
+            workoutsPageUI.LoadWorkouts();  
+        }
+
         builderPanel.SetActive(false); 
 
         if (linkedDetailsPage != null) 
         {
-            // Prepare the list of exercises for the details page
             List<Dictionary<string, object>> savedExercises = new List<Dictionary<string, object>>();
+            
+            // For loop to convert list of exercise names to dictionaries with "name" key for passing to details page
             foreach (string name in selectedExercises)
             {
-                // The details page also expects a list of dictionaries with "name" keys, so we convert our list of selected exercise names into that format
-                savedExercises.Add(new Dictionary<string, object> { { "name", name } });
+                Dictionary<string, object> newExercise = new Dictionary<string, object>();
+                newExercise.Add("name", name);
+                savedExercises.Add(newExercise);
             }
 
-            // Open the details page with the saved workout data (using the existing workout ID if editing, or null if creating new)
-            linkedDetailsPage.Open(new WorkoutData { 
-                id = editingWorkoutId, 
-                name = workoutNameInput.text.Trim(), 
-                exercises = savedExercises 
-            }); 
+            WorkoutData savedData = new WorkoutData();
+            savedData.id = editingWorkoutId;
+            savedData.name = workoutNameInput.text;
+            savedData.exercises = savedExercises;
+
+            linkedDetailsPage.Open(savedData); 
         }
     }
 
-    // REFRESHING UI LISTS
     private void RefreshAddedExercisesList()
     {
-        addedExercisesContent.ClearChildren(); 
-        // Create a new exercise card for each selected exercise
+        foreach (Transform child in addedExercisesContent.transform) 
+        {
+            Destroy(child.gameObject); 
+        }
+
+        // Create exercise cards for each selected exercise in the added exercises list using the delete prefab
         foreach (string name in selectedExercises)
         {
-            GameObject cardObj = Instantiate(deleteExercisePrefab, addedExercisesContent); // Create the delete exercise prefab
-            cardObj.GetComponent<ExerciseCardUI2>().Setup(new ExerciseData { name = name }, this, true); // Set up the exercise card with the exercise data
+            GameObject cardObj = Instantiate(deleteExercisePrefab, addedExercisesContent); 
+            
+            ExerciseData emptyData = new ExerciseData();
+            emptyData.name = name;
+
+            cardObj.GetComponent<ExerciseCardUI2>().Setup(emptyData, this, true); 
         }
     }
 
     private void RefreshPopupList()
     {
-        popupExercisesContent.ClearChildren();
-        string search = searchInput.text.Trim().ToLower(); 
+        foreach (Transform child in popupExercisesContent.transform) 
+        {
+            Destroy(child.gameObject); 
+        }
+
+        string search = searchInput.text.ToLower(); 
         
         foreach (ExerciseData ex in allExercises) 
         {   
-            // Check if the exercise matches the search criteria
-            if (string.IsNullOrEmpty(search) || (ex.name != null && ex.name.ToLower().Contains(search)))
+            if (search == "" || search == null || (ex.name != null && ex.name.ToLower().Contains(search)))
             {
-                bool isSelected = selectedExercises.Contains(ex.name); // Check if the exercise is already in the selected list
-                GameObject prefabToUse = isSelected ? deleteExercisePrefab : addExercisePrefab; // Use the delete prefab if the exercise is already selected, otherwise use the add prefab
+                bool isSelected = selectedExercises.Contains(ex.name); 
+                GameObject prefabToUse;
+                
+                // If the exercise is already selected, show the delete prefab in the popup list, otherwise show the add prefab
+                if (isSelected == true)
+                {
+                    prefabToUse = deleteExercisePrefab;
+                }
+                else
+                {
+                    prefabToUse = addExercisePrefab;
+                }
 
-                GameObject cardObj = Instantiate(prefabToUse, popupExercisesContent); // Create the chosen prefab
-                cardObj.GetComponent<ExerciseCardUI2>().Setup(ex, this, isSelected); // Set up the exercise card with the exercise data
+                GameObject cardObj = Instantiate(prefabToUse, popupExercisesContent); 
+                cardObj.GetComponent<ExerciseCardUI2>().Setup(ex, this, isSelected); 
             }
         }
     }

@@ -1,61 +1,47 @@
 using UnityEngine;
-using UnityEngine.InputSystem; // Unity input system for handling player input
+using UnityEngine.InputSystem; 
 
 public class InputManager : MonoBehaviour
 {
-    public static Vector2 Movement; // Stores the current X and Y movement input from the joystick/keyboard
+    public static Vector2 Movement; 
     public static bool IsMenuOpen;
 
     private PlayerInput playerInput;
-    private Camera mainCamera; // The main camera, used to translate screen taps to game world coordinates
+    private Camera mainCamera; 
 
-    private void Awake()
+    private void Start() 
     {
-        playerInput = GetComponent<PlayerInput>(); // Grab the PlayerInput
-        mainCamera = Camera.main;
-    }
-
-    private void OnEnable()
-    {
-        playerInput.actions["Click"].performed += HandleTap; // Subscribe to the "Click" action.
-    }
-
-    private void OnDisable()
-    {
-        playerInput.actions["Click"].performed -= HandleTap; //Unsubscribe from the "Click" action.
+        playerInput = GetComponent<PlayerInput>(); 
+        mainCamera = Camera.main; // Cache the main camera reference for later use
     }
 
     private void Update()
     {
-        // Stop reading the joystick if a menu is open
-        if (IsMenuOpen)
+        // 1. MOVEMENT CHECK 
+        // We removed the lock! The player can now move freely even if a menu is open.
+        Movement = playerInput.actions["Move"].ReadValue<Vector2>();
+
+        // 2. CLICK/TAP CHECK
+        if (playerInput.actions["Click"].WasPressedThisFrame())
         {
-            Movement = Vector2.zero;
-        }
-        else
-        {
-            Movement = playerInput.actions["Move"].ReadValue<Vector2>();
+            HandleTap();
         }
     }
 
-    private void HandleTap(InputAction.CallbackContext context)
+    private void HandleTap()
     {
-        if (IsMenuOpen) return; // If a menu is currently open, ignore the tap completely and stop running this code
+        Vector2 screenPos = playerInput.actions["Point"].ReadValue<Vector2>();  // Get the screen position of the tap/click
+        Vector2 worldPos = mainCamera.ScreenToWorldPoint(screenPos);  // Convert screen position to world position
 
-        // Get touch position and convert to 2D world space
-        Vector2 screenPos = playerInput.actions["Point"].ReadValue<Vector2>();
-        Vector2 worldPos = mainCamera.ScreenToWorldPoint(screenPos);
-
-        // Check if the player tapped a 2D collider
-        Collider2D hit = Physics2D.OverlapPoint(worldPos);
-        if (hit != null)
+        Collider2D hit = Physics2D.OverlapPoint(worldPos); // Check if we hit any collider at the tap position
+        
+        if (hit != null) // If we hit something, check if it's a station and try to open the menu
         {
-            // GetComponentInParent checks the tapped object AND its parents automatically
-            Station station = hit.GetComponentInParent<Station>();
+            Station station = hit.GetComponentInParent<Station>(); 
             
             if (station != null)
             {
-                station.OpenMenu(); // Tell that specific station to open its menu
+                station.OpenMenu(); 
             }
         }
     }

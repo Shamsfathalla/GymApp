@@ -1,6 +1,6 @@
 using UnityEngine;
-using Firebase.Auth; // Manages authentication operations
-using UnityEngine.SceneManagement; // For switching between scenes 
+using Firebase.Auth; 
+using UnityEngine.SceneManagement; 
 
 public class logout : MonoBehaviour
 {
@@ -15,7 +15,7 @@ public class logout : MonoBehaviour
             Debug.Log("User logged out");
         }
         
-        if (audioManager.instance != null) audioManager.instance.PlayClick();
+        audioManager.instance.PlayClick();
         
         // Loads the login scene
         SceneManager.LoadScene("auth"); 

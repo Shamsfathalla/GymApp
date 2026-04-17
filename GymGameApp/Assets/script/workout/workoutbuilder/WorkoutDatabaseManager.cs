@@ -2,63 +2,66 @@ using System;
 using System.Collections.Generic;
 using Firebase.Auth;
 using Firebase.Firestore;
-using Firebase.Extensions;
 using UnityEngine;
 
 public class WorkoutDatabaseManager : MonoBehaviour
 {
-    // The "Action<List<ExerciseData>>" tells this method to hand back a list when it's done.
-    public void LoadExercises(Action<List<ExerciseData>> onLoaded)
+    // Loads all active exercises from the database and returns them in a list 
+    public async void LoadExercises(Action<List<ExerciseData>> onLoaded) 
     {
-        var db = FirebaseFirestore.DefaultInstance;
-        db.Collection("exercises").WhereEqualTo("isActive", true).GetSnapshotAsync().ContinueWithOnMainThread(task => 
-        { 
-            if (task.IsFaulted) return;
-            
-            List<ExerciseData> loadedList = new List<ExerciseData>();
-            foreach (DocumentSnapshot doc in task.Result.Documents)
-            {
-                loadedList.Add(new ExerciseData { name = doc.GetValue<string>("name") });
-            }
-            
-            // This is the walkie-talkie! It sends the filled list back to the UI script.
-            if (onLoaded != null) onLoaded(loadedList);
-        });
+        FirebaseFirestore db = FirebaseFirestore.DefaultInstance;
+        
+        // We only want to load active exercises, so we use a query to filter them
+        Query query = db.Collection("exercises").WhereEqualTo("isActive", true);
+        
+        // await pauses this method until the database finishes fetching, reading top-to-bottom cleanly
+        QuerySnapshot snapshot = await query.GetSnapshotAsync();
+        
+        List<ExerciseData> loadedList = new List<ExerciseData>(); 
+        
+        // We loop through the returned documents and create ExerciseData objects from them
+        foreach (DocumentSnapshot doc in snapshot.Documents) 
+        {
+            ExerciseData newExercise = new ExerciseData();
+            newExercise.name = doc.GetValue<string>("name");
+            loadedList.Add(newExercise);
+        }
+        
+        if (onLoaded != null) 
+        {
+            onLoaded(loadedList);
+        }
     }
 
-    // The "Action" here just means "Let me know when the save is completely finished."
-    public void SaveWorkout(string workoutId, string workoutName, List<Dictionary<string, object>> exerciseList, Action onFinished)
+    // Saves a workout to the database. If workoutId is empty or null, it creates a new workout. Otherwise, it updates the existing workout with the given ID.
+    public async void SaveWorkout(string workoutId, string workoutName, List<Dictionary<string, object>> exerciseList, Action onFinished)
     {
-        var currentUser = FirebaseAuth.DefaultInstance.CurrentUser; 
-        if (currentUser == null) return; 
+        FirebaseUser currentUser = FirebaseAuth.DefaultInstance.CurrentUser; 
 
-        var newWorkoutData = new Dictionary<string, object>
-        {
-            { "name", workoutName }, 
-            { "exerciseCount", exerciseList.Count }, 
-            { "exercises", exerciseList }, 
-            { "updatedAt", Timestamp.GetCurrentTimestamp() } 
-        };
+        Dictionary<string, object> newWorkoutData = new Dictionary<string, object>();
+        newWorkoutData.Add("name", workoutName);
+        newWorkoutData.Add("exerciseCount", exerciseList.Count);
+        newWorkoutData.Add("exercises", exerciseList);
+        newWorkoutData.Add("updatedAt", Timestamp.GetCurrentTimestamp());
 
-        var db = FirebaseFirestore.DefaultInstance;
-        var workoutsRef = db.Collection("users").Document(currentUser.UserId).Collection("workouts"); 
+        FirebaseFirestore db = FirebaseFirestore.DefaultInstance;
+        CollectionReference workoutsRef = db.Collection("users").Document(currentUser.UserId).Collection("workouts"); 
 
-        if (string.IsNullOrEmpty(workoutId))
+        if (workoutId == "" || workoutId == null)
         {
             // It is a NEW workout
             newWorkoutData.Add("createdAt", Timestamp.GetCurrentTimestamp()); 
-            workoutsRef.AddAsync(newWorkoutData).ContinueWithOnMainThread(task => 
-            {
-                if (onFinished != null) onFinished(); 
-            });
+            await workoutsRef.AddAsync(newWorkoutData);
         }
         else
         {
             // It is an EXISTING workout
-            workoutsRef.Document(workoutId).UpdateAsync(newWorkoutData).ContinueWithOnMainThread(task => 
-            {
-                if (onFinished != null) onFinished();
-            });
+            await workoutsRef.Document(workoutId).UpdateAsync(newWorkoutData);
+        }
+
+        if (onFinished != null) 
+        {
+            onFinished();
         }
     }
 }
