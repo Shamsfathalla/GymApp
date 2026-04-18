@@ -5,5 +5,6 @@ using Firebase.Firestore;
 public class Userdata 
 {
     // represents user data stored in database.
-    [FirestoreProperty] public string Email { get; set; } // Takes the value of email and saves it in the database
+    [FirestoreProperty] 
+    public string Email { get; set; } // Takes the value of email and saves it in the database
 }

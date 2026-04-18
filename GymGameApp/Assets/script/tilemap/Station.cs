@@ -6,16 +6,13 @@ public class Station : MonoBehaviour
     
     private int PlayerCollidersRange = 0; // Tracks how many player colliders are inside the trigger zone
 
-    // Opens the menu only if the player is physically standing withing the proximity of the station
+    // Opens the menu only if the player is physically standing within the proximity of the station
     public void OpenMenu()
     {
         if (PlayerCollidersRange > 0) 
         {
             // Play the audio
-            if (audioManager.instance != null)
-            {
-                audioManager.instance.PlayClick();
-            }
+            audioManager.instance.PlayClick();
 
             ToggleMenu(true); // Only open if the player is in range
         }
@@ -24,10 +21,7 @@ public class Station : MonoBehaviour
     public void CloseMenu()
     {
         // Play the audio
-        if (audioManager.instance != null)
-        {
-            audioManager.instance.PlayClick();
-        }
+        audioManager.instance.PlayClick();
         
         ToggleMenu(false); // Close the menu button
     }
@@ -35,22 +29,34 @@ public class Station : MonoBehaviour
     private void ToggleMenu(bool isOpen)
     {
         menuPanel.SetActive(isOpen);
-        InputManager.IsMenuOpen = isOpen; // Locks/unlocks the joystick
+        InputManager.IsMenuOpen = isOpen; 
     }
 
     // Detects when the player enters the station area using "Player" tag
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (IsPlayer(other)) PlayerCollidersRange++;
+        if (IsPlayer(other)) 
+        {
+            PlayerCollidersRange++;
+        }
     }
 
     // Detects when the player leaves the station area
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (IsPlayer(other)) PlayerCollidersRange--;
+        if (IsPlayer(other)) 
+        {
+            PlayerCollidersRange--;
+        }
     }
 
-    // Checks if the object has the "Player" tag 
-    private bool IsPlayer(Collider2D other) => 
-        other.CompareTag("Player") || other.transform.root.CompareTag("Player");
+    // Checks if the object has the "Player" tag using standard if statements
+    private bool IsPlayer(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            return true;
+        }
+        return false;
+    }
 }

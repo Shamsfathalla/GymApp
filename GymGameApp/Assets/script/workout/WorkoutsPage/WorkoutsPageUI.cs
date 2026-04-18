@@ -1,7 +1,7 @@
+using System;
 using System.Collections.Generic; 
 using Firebase.Auth; 
 using Firebase.Firestore;
-using Firebase.Extensions; 
 using UnityEngine;
 
 public class WorkoutsPageUI : MonoBehaviour
@@ -10,64 +10,78 @@ public class WorkoutsPageUI : MonoBehaviour
     [SerializeField] private GameObject workoutCardPrefab;
     [SerializeField] private WorkoutDetailsPageUI detailsPageUI;
 
-    private FirebaseUser currentUser; // Store the current user to avoid repeated calls to FirebaseAuth.DefaultInstance.CurrentUser
+    private FirebaseUser currentUser; 
 
     private void OnEnable()
     {
-        currentUser = FirebaseAuth.DefaultInstance.CurrentUser; // Cache the current user when the page is enabled
+        currentUser = FirebaseAuth.DefaultInstance.CurrentUser; 
         LoadWorkouts(); 
     }
 
-    public void LoadWorkouts()
+    public async void LoadWorkouts()
     {
-        if (currentUser == null) return; 
-
-        // Fetch workouts from Firestore
-        FirebaseFirestore.DefaultInstance.Collection("users").Document(currentUser.UserId).Collection("workouts").GetSnapshotAsync().ContinueWithOnMainThread(task =>
+        try 
         {
-            if (task.IsFaulted) return; 
+            FirebaseFirestore db = FirebaseFirestore.DefaultInstance;
+            QuerySnapshot snapshot = await db.Collection("users").Document(currentUser.UserId).Collection("workouts").GetSnapshotAsync();
 
-            workoutCardsContent.ClearChildren();  // Clear existing workout cards before loading new ones
+            foreach (Transform child in workoutCardsContent.transform) // Clear existing workout cards before populating new ones
+            {
+                Destroy(child.gameObject); 
+            }
 
-            // Standard loop through documents
-            foreach (DocumentSnapshot doc in task.Result.Documents)
+            // For each workout document, create a WorkoutData object and create a workout card UI element
+            foreach (DocumentSnapshot doc in snapshot.Documents)
             {
                 if (doc.Exists) 
                 {
-                    WorkoutData newWorkout = new WorkoutData();  // Create a new WorkoutData instance for each document
+                    WorkoutData newWorkout = new WorkoutData();  
                     newWorkout.id = doc.Id; 
-
-                    // Directly grab the values
                     newWorkout.name = doc.GetValue<string>("name"); 
                     newWorkout.exerciseCount = doc.GetValue<int>("exerciseCount");
-                    
-                    // Get exercises as a list of dictionaries and assign to the workout dataet 
                     newWorkout.exercises = doc.GetValue<List<Dictionary<string, object>>>("exercises");
 
-                    GameObject card = Instantiate(workoutCardPrefab, workoutCardsContent); // Create a new card for each workout
+                    GameObject card = Instantiate(workoutCardPrefab, workoutCardsContent); 
                     WorkoutCardUI cardUI = card.GetComponent<WorkoutCardUI>();  
                     
-                    if (cardUI != null) {
-                        cardUI.Setup(newWorkout, this); // Pass the workout data and reference to this page for callbacks
+                    if (cardUI != null) 
+                    {
+                        cardUI.Setup(newWorkout, this); 
                     }
                 }
             }
-        });
+        }
+        catch (Exception error)
+        {
+            Debug.LogError("Failed to load workouts: " + error.Message);
+        }
     }
 
-    public void DeleteWorkout(string workoutId)
+    public async void DeleteWorkout(string workoutId)
     {
-        if (string.IsNullOrWhiteSpace(workoutId)) return; // Validate workoutId before attempting deletion
+        if (workoutId == null || workoutId == "") 
+        {
+            return; 
+        }
 
-        FirebaseFirestore.DefaultInstance.Collection("users").Document(currentUser.UserId).Collection("workouts")
-          .Document(workoutId).DeleteAsync().ContinueWithOnMainThread(task => // After deletion, reload workouts to reflect changes
-          {
-              if (!task.IsFaulted) LoadWorkouts(); 
-          });
+        try // Delete the workout document from Firestore 
+        {
+            FirebaseFirestore db = FirebaseFirestore.DefaultInstance;
+            await db.Collection("users").Document(currentUser.UserId).Collection("workouts").Document(workoutId).DeleteAsync();
+            
+            LoadWorkouts(); 
+        }
+        catch (Exception error)
+        {
+            Debug.LogError("Failed to delete workout: " + error.Message);
+        }
     }
 
     public void OpenWorkoutDetails(WorkoutData workout)
     {
-        if (workout != null) detailsPageUI.Open(workout); // Open the details page with the selected workout data
+        if (workout != null) 
+        {
+            detailsPageUI.Open(workout); 
+        }
     }
 }

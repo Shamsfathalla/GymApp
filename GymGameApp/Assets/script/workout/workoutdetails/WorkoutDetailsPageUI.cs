@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using TMPro; 
 using Firebase.Auth; 
 using Firebase.Firestore; 
-using Firebase.Extensions; 
 using UnityEngine;
 
 public class WorkoutDetailsPageUI : MonoBehaviour
@@ -16,105 +15,122 @@ public class WorkoutDetailsPageUI : MonoBehaviour
     [SerializeField] private WorkoutBuilderUI builderUI;
     [SerializeField] private ExerciseDetailPageUI exerciseDetailPageUI; 
 
-    private WorkoutData currentWorkout; // Store the currently displayed workout data
+    private WorkoutData currentWorkout; 
     
     public void backButton() 
     { 
-        if (audioManager.instance != null) audioManager.instance.PlayClick();
+        audioManager.instance.PlayClick();
+
         detailsPanel.SetActive(false);
     }
 
-    // This method is called by WorkoutBuilderUI after saving changes to refresh the displayed workout details
     public void Open(WorkoutData workout)
     {
-        if (workout == null) return; 
+        if (workout == null) 
+        {
+            return; 
+        }
         
+        // Set the current workout data and update the UI
         currentWorkout = workout; 
         workoutNameText.text = workout.name; 
         detailsPanel.SetActive(true);
 
-        exercisesContent.ClearChildren();
-        // Display exercises in the workout
+        // Clear existing exercise cards before populating new ones
+        foreach (Transform child in exercisesContent.transform) 
+        {
+            Destroy(child.gameObject); 
+        }
+        
         if (workout.exercises != null)
         {
-            // Each exercise is stored as a dictionary with keys like "name", "reps", "sets", etc.
             foreach (Dictionary<string, object> dict in workout.exercises)
             {
-                // 1. Spawn the prefab into the scene
                 GameObject newCard = Instantiate(workoutExerciseCardPrefab, exercisesContent);
-
-                // 2. Grab the script attached to that specific card
                 WorkoutExerciseCardUI cardScript = newCard.GetComponent<WorkoutExerciseCardUI>();
 
-                // 3. Safely pass the data into the script's Setup method
-                cardScript.Setup(dict["name"].ToString(), (clickedName) => exerciseButton(clickedName));
+                // Replaced the lambda callback with just directly passing the method name
+                cardScript.Setup(dict["name"].ToString(), exerciseButton);
             }
         }
     }
 
-    private void exerciseButton(string exerciseName)
+    private async void exerciseButton(string exerciseName)
     {
-        var user = FirebaseAuth.DefaultInstance.CurrentUser; 
-        if (user == null) return;
-
-        // Fetch the current progress and history for the selected exercise
-        var exerciseRef = FirebaseFirestore.DefaultInstance.Collection("users").Document(user.UserId).Collection("exerciseProgress").Document(exerciseName); 
-
-        exerciseRef.GetSnapshotAsync().ContinueWithOnMainThread(mainTask => 
+        FirebaseUser user = FirebaseAuth.DefaultInstance.CurrentUser; 
+        
+        if (user == null) 
         {
-            if (mainTask.IsFaulted) return; 
-            
-            // Prepare the progress data to pass to the detail page
-            ExerciseProgressData progressData = new ExerciseProgressData { exerciseName = exerciseName };
+            return;
+        }
 
-            // Get current progress sets
-            if (mainTask.Result.Exists)
+        FirebaseFirestore db = FirebaseFirestore.DefaultInstance;
+        DocumentReference exerciseRef = db.Collection("users").Document(user.UserId).Collection("exerciseProgress").Document(exerciseName); 
+
+        try 
+        {
+            // First await for current progress sets
+            DocumentSnapshot mainDoc = await exerciseRef.GetSnapshotAsync();
+
+            // Create the ExerciseProgressData object to pass to the details page
+            ExerciseProgressData progressData = new ExerciseProgressData();
+            progressData.exerciseName = exerciseName;
+
+            if (mainDoc.Exists) // Check if the document exists before trying to read data
             {
-                List<object> setsObj = mainTask.Result.GetValue<List<object>>("currentSets");
+                List<object> setsObj = mainDoc.GetValue<List<object>>("currentSets"); // Check if the "currentSets" field exists and is not null
+                
                 if (setsObj != null)
                 {
                     foreach (Dictionary<string, object> dict in setsObj)
                     {
-                        progressData.currentSets.Add(new SetData {
-                            reps = Convert.ToInt32(dict["reps"]),
-                            weight = Convert.ToSingle(dict["weight"])
-                        });
+                        SetData newSet = new SetData();
+                        newSet.reps = Convert.ToInt32(dict["reps"]);
+                        newSet.weight = Convert.ToSingle(dict["weight"]);
+
+                        progressData.currentSets.Add(newSet);
                     }
                 }
             }
 
-            // Now fetch the history for this exercise
-            exerciseRef.Collection("history").OrderByDescending("savedAt").GetSnapshotAsync().ContinueWithOnMainThread(historyTask => 
+            // Second await for history sets
+            QuerySnapshot historySnapshot = await exerciseRef.Collection("history").OrderByDescending("savedAt").GetSnapshotAsync();
+
+            // For loop to convert history sessions into HistorySession objects and add them to the progressData.history list
+            foreach (DocumentSnapshot hDoc in historySnapshot.Documents)
             {
-                if (historyTask.IsFaulted || historyTask.IsCanceled) return;
-
-                foreach (DocumentSnapshot hDoc in historyTask.Result.Documents)
+                HistorySession session = new HistorySession();
+                session.date = hDoc.GetValue<string>("date");
+                
+                List<object> hSetsObj = hDoc.GetValue<List<object>>("sets");
+                
+                if (hSetsObj != null)
                 {
-                    // Convert Firestore data to HistorySession
-                    HistorySession session = new HistorySession { date = hDoc.GetValue<string>("date") };
-                    // Get sets for this history session
-                    List<object> hSetsObj = hDoc.GetValue<List<object>>("sets");
-                    if (hSetsObj != null)
+                    foreach (Dictionary<string, object> dict in hSetsObj) // Loop through each set in the history session and convert it to a SetData object, then add it to the session.sets list
                     {
-                        foreach (Dictionary<string, object> dict in hSetsObj)
-                        {
-                            session.sets.Add(new SetData {
-                                reps = Convert.ToInt32(dict["reps"]),
-                                weight = Convert.ToSingle(dict["weight"])
-                            });
-                        }
-                    }
-                    progressData.history.Add(session);
-                }
+                        SetData historySet = new SetData();
+                        historySet.reps = Convert.ToInt32(dict["reps"]);
+                        historySet.weight = Convert.ToSingle(dict["weight"]);
 
-                exerciseDetailPageUI.Open(progressData);
-            });
-        });
+                        session.sets.Add(historySet);
+                    }
+                }
+                
+                progressData.history.Add(session);
+            }
+
+            exerciseDetailPageUI.Open(progressData);
+        }
+        catch (Exception error)
+        {
+            Debug.LogError("Error loading exercise details: " + error.Message);
+        }
     }
 
     public void editButton()
     {
-        if (audioManager.instance != null) audioManager.instance.PlayClick();
+        audioManager.instance.PlayClick();
+
         detailsPanel.SetActive(false);
         builderUI.OpenEditButton(currentWorkout, this);
     }
