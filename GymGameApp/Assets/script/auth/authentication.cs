@@ -1,110 +1,93 @@
+using System;
 using UnityEngine;
-using Firebase; // Core Firebase functionalities
-using Firebase.Auth; // Manages authentication operations
-using Firebase.Extensions; // Ensures Firebase tasks run safely on Unity's main thread
-using Firebase.Firestore; // For Firestore database operations
+using Firebase; 
+using Firebase.Auth; 
+using Firebase.Firestore; 
 using TMPro; 
 using UnityEngine.SceneManagement; 
 
 public class authentication : MonoBehaviour
 {
-    private FirebaseAuth _auth; // Manages user authentication
-    private FirebaseFirestore _db; // Firestore database instance for storing user data
+    private FirebaseAuth auth; 
+    private FirebaseFirestore db; 
 
-    [Header("Login Fields")]
-    public TMP_InputField loginEmail;
-    public TMP_InputField loginPassword;
+    [SerializeField] private TMP_InputField loginEmail;
+    [SerializeField] private TMP_InputField loginPassword;
 
-    [Header("Signup Fields")]
-    public TMP_InputField signupEmail;
-    public TMP_InputField signupPassword;
+    [SerializeField] private TMP_InputField signupEmail;
+    [SerializeField] private TMP_InputField signupPassword;
 
-    void Start()
+    // 1. Add a reference for your error text
+    [SerializeField] private TMP_Text errorText; 
+
+    async void Start() 
     {
-        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
-        {
-            if (task.Result == DependencyStatus.Available)
-            {
-                // Initialize Firebase
-                _auth = FirebaseAuth.DefaultInstance;
-                _db = FirebaseFirestore.DefaultInstance;
-                Debug.Log("Firebase is ready ");
+        DependencyStatus dependencyStatus = await FirebaseApp.CheckAndFixDependenciesAsync();
 
-                if (_auth.CurrentUser != null)
-                {
-                    Debug.Log("User already signed in: " + _auth.CurrentUser.Email);
-                    SceneManager.LoadScene("gym"); // Jump directly to the gym scene
-                }
-            }
-            else
+        if (dependencyStatus == DependencyStatus.Available)
+        {
+            auth = FirebaseAuth.DefaultInstance;
+            db = FirebaseFirestore.DefaultInstance;
+            Debug.Log("Firebase is ready");
+
+            if (auth.CurrentUser != null)
             {
-                Debug.LogError("Firebase not ready: " + task.Result);
+                Debug.Log("User already signed in");
+                SceneManager.LoadScene("gym"); 
             }
-        });
+        }
+        else
+        {
+            Debug.Log("Firebase not ready");
+        }
     }
 
-    // If the operation fails, an error is logged 
-    // If successful, the user’s email is retrieved and confirmed
-    public void SignUp()
+    public async void SignUp() 
     {
-        if (audioManager.instance != null) audioManager.instance.PlayClick();
+        audioManager.instance.PlayClick();
+        errorText.text = ""; // 2. Clear out any old error messages when a new attempt starts
         
-        _auth.CreateUserWithEmailAndPasswordAsync(
-            signupEmail.text.Trim(),
-            signupPassword.text.Trim()
-        ).ContinueWithOnMainThread(task =>
+        try 
         {
-            if (task.IsFaulted)
-            {
-                Debug.LogError("Signup Failed");
-                return;
-            }
+            await auth.CreateUserWithEmailAndPasswordAsync(signupEmail.text, signupPassword.text);
             
-            // Get the successfully created user
-            Firebase.Auth.FirebaseUser newUser = task.Result.User;
+            FirebaseUser newUser = auth.CurrentUser; 
 
-            // Save user data
-            Userdata userData = new Userdata
-            {
-                Email = newUser.Email
-            };
+            Userdata userData = new Userdata(); 
+            userData.Email = newUser.Email; 
 
-            _db.Collection("users").Document(newUser.UserId).SetAsync(userData).ContinueWithOnMainThread(dbTask =>
-            {
-                if (dbTask.IsFaulted)
-                {
-                    Debug.LogError("Failed to save user data: " + dbTask.Exception);
-                }
-                else
-                {
-                    Debug.Log("User data saved successfully");
-                }
-            });
-
-            Debug.Log("Signup Successful: " + task.Result.User.Email);
-            SceneManager.LoadScene("gym"); // Loads the main scene after successful login
-        });
+            await db.Collection("users").Document(newUser.UserId).SetAsync(userData);
+            
+            Debug.Log("User data saved successfully");
+            SceneManager.LoadScene("gym"); 
+        }
+        catch (Exception error)
+        {
+            // 3. Display the error to the player
+            errorText.color = Color.red;
+            errorText.text = "Signup Failed: " + error.Message; 
+            Debug.Log("Signup Failed: " + error.Message);
+        }
     }
 
-    // Failure indicates incorrect credentials or connection issues 
-    // Success confirms authentication and retrieves user information
-    public void Login()
+    public async void Login() 
     {
-        if (audioManager.instance != null) audioManager.instance.PlayClick();
-
-        _auth.SignInWithEmailAndPasswordAsync(
-            loginEmail.text.Trim(),
-            loginPassword.text.Trim()
-        ).ContinueWithOnMainThread(task =>
+        audioManager.instance.PlayClick();
+        errorText.text = ""; // Clear out any old error messages
+        
+        try
         {
-            if (task.IsFaulted)
-            {
-                Debug.LogError("Login Failed: " + task.Exception);
-                return;
-            }
-
+            await auth.SignInWithEmailAndPasswordAsync(loginEmail.text, loginPassword.text);
+            
             Debug.Log("Login Successful");
-            SceneManager.LoadScene("gym"); // Loads the main scene after successful login
-        });
+            SceneManager.LoadScene("gym"); 
+        }
+        catch (Exception error)
+        {
+            // Display the error to the player
+            errorText.color = Color.red;
+            errorText.text = "Login Failed: " + error.Message; 
+            Debug.Log("Login Failed: " + error.Message);
+        }
     }
 }

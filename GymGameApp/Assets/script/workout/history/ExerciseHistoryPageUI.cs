@@ -9,10 +9,12 @@ public class ExerciseHistoryPageUI : MonoBehaviour
     [SerializeField] private Transform historyContent;
     [SerializeField] private GameObject historyCardPrefab;
 
-    public void Open(ExerciseProgressData data) // Method to open the history page and populate it with data
+    public void Open(ExerciseProgressData data) 
     {
         pagePanel.SetActive(true);
-        exerciseNameText.text = $"{data.exerciseName} History"; 
+
+        // Set the title of the page to include the exercise name
+        exerciseNameText.text = data.exerciseName + " History"; 
 
         PopulateHistory(data.history); 
     }
@@ -20,7 +22,10 @@ public class ExerciseHistoryPageUI : MonoBehaviour
     // Clears old entries and spawns new history cards
     private void PopulateHistory(List<HistorySession> history)
     {
-        historyContent.ClearChildren(); 
+        foreach (Transform child in historyContent.transform) 
+        {
+            Destroy(child.gameObject); 
+        }
 
         if (history == null) 
         {
@@ -30,10 +35,10 @@ public class ExerciseHistoryPageUI : MonoBehaviour
         // A nested loop to go through each session, and then each set inside that session
         foreach (HistorySession session in history)
         {
-            foreach (SetData singleSet in session.sets) // Loop through each set in the session
+            foreach (SetData singleSet in session.sets) 
             {
-                GameObject card = Instantiate(historyCardPrefab, historyContent); // Create a new card for each set
-                HistoryCardUI cardUI = card.GetComponent<HistoryCardUI>(); // Get the HistoryCardUI component to set up the card's display
+                GameObject card = Instantiate(historyCardPrefab, historyContent); 
+                HistoryCardUI cardUI = card.GetComponent<HistoryCardUI>(); 
                 
                 if (cardUI != null)
                 {
@@ -45,7 +50,8 @@ public class ExerciseHistoryPageUI : MonoBehaviour
 
     public void backButton()
     {
-        if (audioManager.instance != null) audioManager.instance.PlayClick();
+        audioManager.instance.PlayClick();
+
         pagePanel.SetActive(false);
     }
 }

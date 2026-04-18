@@ -1,4 +1,4 @@
-using TMPro; // For TextMeshPro UI elements
+using TMPro; 
 using UnityEngine; 
 
 public class SetCardViewUI : MonoBehaviour

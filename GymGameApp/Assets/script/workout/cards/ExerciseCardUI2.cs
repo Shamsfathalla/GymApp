@@ -7,10 +7,19 @@ public class ExerciseCardUI2 : MonoBehaviour
     [SerializeField] private TMP_Text exerciseNameText;
     [SerializeField] private Button actionButton;
 
+    // Cache the data and builder references for use in the button click handler
+    private ExerciseData cachedData;
+    private WorkoutBuilderUI cachedBuilder;
+    private bool cachedIsSelected;
+
     public void Setup(ExerciseData data, WorkoutBuilderUI builder, bool isSelected) 
     {
-        // Set exercise name
-        if (data != null && !string.IsNullOrEmpty(data.name))
+        cachedData = data;
+        cachedBuilder = builder;
+        cachedIsSelected = isSelected;
+
+        // Set exercise name using standard, expanded checks
+        if (data != null && data.name != null && data.name != "")
         {
             exerciseNameText.text = data.name;
         }
@@ -19,23 +28,26 @@ public class ExerciseCardUI2 : MonoBehaviour
             exerciseNameText.text = "";
         }
 
-        actionButton.onClick.RemoveAllListeners(); // Clear previous listeners to avoid multiple calls
-        actionButton.onClick.AddListener(() => 
-        {
-            // Play audio
-            if (audioManager.instance != null)
-            {
-                audioManager.instance.PlayClick();
-            }
+        actionButton.onClick.RemoveAllListeners(); 
+        
+        // Add listener using a standard private method
+        actionButton.onClick.AddListener(OnActionClicked);
+    }
 
-            if (isSelected) // If already selected, remove it from the workout
-            {
-                builder.RemoveExercise(data.name); 
-            }
-            else 
-            {
-                builder.AddExercise(data); 
-            }
-        });
+    private void OnActionClicked()
+    {
+        if (audioManager.instance != null)
+        {
+            audioManager.instance.PlayClick();
+        }
+
+        if (cachedIsSelected == true) 
+        {
+            cachedBuilder.RemoveExercise(cachedData.name); 
+        }
+        else 
+        {
+            cachedBuilder.AddExercise(cachedData); 
+        }
     }
 }

@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic; 
 using Firebase.Auth; 
 using Firebase.Firestore; 
-using Firebase.Extensions; 
 using TMPro; 
 using UnityEngine;
 
@@ -15,25 +14,30 @@ public class ExerciseDetailEditPageUI : MonoBehaviour
 
     private ExerciseProgressData editingData; 
     private ExerciseDetailPageUI linkedViewPage; 
-    private List<SetCardEditUI> activeEditCards = new List<SetCardEditUI>(); // We keep track of the active edit cards so we can gather their data when saving and also delete them when needed
+    private List<SetCardEditUI> activeEditCards = new List<SetCardEditUI>(); // Track the active edit cards for easy data gathering and cleanup
 
     public void discardButton() 
     { 
-        if (audioManager.instance != null) audioManager.instance.PlayClick();
+        audioManager.instance.PlayClick();
+
         pagePanel.SetActive(false); 
     }
 
     public void Open(ExerciseProgressData data, ExerciseDetailPageUI viewPage)
     {
+        // Set the current editing data and linked view page for later use when saving
         editingData = data; 
         linkedViewPage = viewPage; 
         exerciseNameText.text = data.exerciseName; 
         pagePanel.SetActive(true);
 
         activeEditCards.Clear(); 
-        setsContent.ClearChildren(); 
 
-        // We loop through the current sets in the provided data and create an edit card for each one, pre-populating it with the existing reps and weight. This allows the user to see their current progress and make adjustments as needed.
+        foreach (Transform child in setsContent.transform) // Clean up any existing cards before populating new ones
+        {
+            Destroy(child.gameObject); 
+        }
+
         if (data.currentSets != null)
         {
             foreach (SetData set in data.currentSets) 
@@ -45,13 +49,18 @@ public class ExerciseDetailEditPageUI : MonoBehaviour
 
     public void addSetButton()
     {
-        if (audioManager.instance != null) audioManager.instance.PlayClick();
-        CreateEditCard(new SetData { reps = 0, weight = 0 }); 
+        audioManager.instance.PlayClick();
+
+        SetData newSet = new SetData();
+        newSet.reps = 0;
+        newSet.weight = 0;
+
+        CreateEditCard(newSet); 
     }
 
     private void CreateEditCard(SetData data)
     {
-        // Create the edit card prefab and set it up with the provided data
+        // When creating an edit card, we also add it to the activeEditCards list so we can easily gather data from them later when saving
         GameObject cardObj = Instantiate(setCardEditPrefab, setsContent); 
         SetCardEditUI cardUI = cardObj.GetComponent<SetCardEditUI>(); 
         
@@ -65,76 +74,92 @@ public class ExerciseDetailEditPageUI : MonoBehaviour
         Destroy(card.gameObject); 
     }
 
-    public void saveButton()
+    public async void saveButton()
     {
-        if (audioManager.instance != null) audioManager.instance.PlayClick();
+        audioManager.instance.PlayClick();
 
-        var currentuser = FirebaseAuth.DefaultInstance.CurrentUser; 
-        if (currentuser == null) return;
+        FirebaseUser currentuser = FirebaseAuth.DefaultInstance.CurrentUser; 
 
-        var db = FirebaseFirestore.DefaultInstance; 
-        // We get a reference to the specific exercise document for the current user. This is where we'll save the updated sets data.
-        var exerciseRef = db.Collection("users").Document(currentuser.UserId).Collection("exerciseProgress").Document(editingData.exerciseName); 
+        FirebaseFirestore db = FirebaseFirestore.DefaultInstance; 
+        DocumentReference exerciseRef = db.Collection("users").Document(currentuser.UserId).Collection("exerciseProgress").Document(editingData.exerciseName); 
 
-        // 1. Save the old sets to history first (if we have any)
-        if (editingData.currentSets != null && editingData.currentSets.Count > 0)
+        try 
         {
-            SaveHistory(exerciseRef);
-        }
+            // 1. Save the old sets to history directly inside this method
+            if (editingData.currentSets != null && editingData.currentSets.Count > 0)
+            {
+                string dateOnly = DateTime.Now.ToString("dd MMM yyyy"); 
+                List<Dictionary<string, object>> firestoreOldSets = new List<Dictionary<string, object>>(); 
+                
+                foreach (SetData s in editingData.currentSets) // Convert each old set to a dictionary format for Firestore
+                {
+                    Dictionary<string, object> oldSet = new Dictionary<string, object>();
+                    oldSet.Add("reps", s.reps);
+                    oldSet.Add("weight", s.weight);
 
-        // 2. Gather the new sets from the UI cards
-        List<SetData> newSets = new List<SetData>();
-        List<Dictionary<string, object>> firestoreNewSets = new List<Dictionary<string, object>>();
+                    firestoreOldSets.Add(oldSet);
+                }
 
-        foreach (SetCardEditUI card in activeEditCards)
-        {
-            SetData newSet = card.GetSetData();
-            newSets.Add(newSet);
-            firestoreNewSets.Add(new Dictionary<string, object> { { "reps", newSet.reps }, { "weight", newSet.weight } });
-        }
+                // Create a history entry with the date and old sets, and save it to Firestore under the "history" subcollection of this exercise document
+                Dictionary<string, object> historyData = new Dictionary<string, object>();
+                historyData.Add("date", dateOnly);
+                historyData.Add("sets", firestoreOldSets);
+                historyData.Add("savedAt", Timestamp.GetCurrentTimestamp());
 
-        editingData.currentSets = newSets; 
+                await exerciseRef.Collection("history").AddAsync(historyData); 
+                
+                if (editingData.history == null) 
+                {
+                    editingData.history = new List<HistorySession>();        
+                }
 
-        // 3. Save the new sets to Firebase
-        var user = new Dictionary<string, object>
-        {
-            { "exerciseName", editingData.exerciseName }, 
-            { "currentSets", firestoreNewSets }, 
-            { "updatedAt", Timestamp.GetCurrentTimestamp() }
-        };
+                List<SetData> oldSetsCopy = new List<SetData>(editingData.currentSets);
 
-        // If it's a new document (which shouldn't be the case here since we're editing), we also want to set createdAt
-        exerciseRef.SetAsync(user, SetOptions.MergeAll).ContinueWithOnMainThread(task =>
-        {
-            if (task.IsFaulted || task.IsCanceled) return; 
+                // Create a new HistorySession object and add it to the local editingData history list so that the linked view page can display it 
+                HistorySession newSession = new HistorySession();
+                newSession.date = dateOnly;
+                newSession.sets = oldSetsCopy;
+
+                editingData.history.Insert(0, newSession); 
+            }
+
+            // 2. Gather the new sets from the UI cards
+            List<SetData> newSets = new List<SetData>();
+            List<Dictionary<string, object>> firestoreNewSets = new List<Dictionary<string, object>>();
+
+            // For loop through each active edit card, get the set data and add it to the new sets list
+            foreach (SetCardEditUI card in activeEditCards)
+            {
+                SetData newSet = card.GetSetData();
+                newSets.Add(newSet);
+
+                Dictionary<string, object> firestoreSet = new Dictionary<string, object>();
+                firestoreSet.Add("reps", newSet.reps);
+                firestoreSet.Add("weight", newSet.weight);
+
+                firestoreNewSets.Add(firestoreSet);
+            }
+
+            editingData.currentSets = newSets; 
+
+            // 3. Save the new sets to Firebase using basic Dictionary Adds
+            Dictionary<string, object> userData = new Dictionary<string, object>();
+            userData.Add("exerciseName", editingData.exerciseName);
+            userData.Add("currentSets", firestoreNewSets);
+            userData.Add("updatedAt", Timestamp.GetCurrentTimestamp());
+
+            await exerciseRef.SetAsync(userData, SetOptions.MergeAll);
+
+            discardButton(); 
             
-            discardButton(); // Re-using your discard method to close the panel!
-            if (linkedViewPage != null) linkedViewPage.Open(editingData); 
-        });
-    }
-
-    // This method saves the current sets to the history collection before we overwrite them with new data
-    private void SaveHistory(DocumentReference exerciseRef)
-    {
-        string dateOnly = DateTime.Now.ToString("dd MMM yyyy"); 
-        List<Dictionary<string, object>> firestoreOldSets = new List<Dictionary<string, object>>(); // We create a list of dictionaries to store the old sets in a format suitable for Firestore
-        
-        // We just loop through the currentSets directly instead of making an "oldSets" list
-        foreach (SetData s in editingData.currentSets) 
-        {
-            firestoreOldSets.Add(new Dictionary<string, object> { { "reps", s.reps }, { "weight", s.weight } });
+            if (linkedViewPage != null) 
+            {
+                linkedViewPage.Open(editingData); 
+            }
         }
-
-        exerciseRef.Collection("history").AddAsync(new Dictionary<string, object> {
-            { "date", dateOnly },
-            { "sets", firestoreOldSets }, 
-            { "savedAt", Timestamp.GetCurrentTimestamp() }
-        }); 
-        
-        // We also want to update our local data's history so that if the user opens the history page after saving, they can see the new entry without needing to fetch from Firestore again
-        if (editingData.history == null) editingData.history = new List<HistorySession>();        
-        // Make a copy of the list for the local history
-        List<SetData> oldSetsCopy = new List<SetData>(editingData.currentSets);
-        editingData.history.Insert(0, new HistorySession { date = dateOnly, sets = oldSetsCopy }); 
+        catch (Exception error)
+        {
+            Debug.LogError("Failed to save exercise data: " + error.Message);
+        }
     }
 }
