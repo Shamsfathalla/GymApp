@@ -1,4 +1,6 @@
 using UnityEngine;
+using System;
+using Firebase.RemoteConfig;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,6 +15,30 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    async void Start()
+    {
+        try
+        {
+        // 1. Download the latest values from the Remote Config service
+        await FirebaseRemoteConfig.DefaultInstance.FetchAsync(TimeSpan.Zero);
+        
+        // 2. Apply to the game session 
+        await FirebaseRemoteConfig.DefaultInstance.ActivateAsync();
+
+        // 3. Read the value and apply it to the player's movement speed
+        float remoteSpeed = (float)FirebaseRemoteConfig.DefaultInstance.GetValue("player_speed").DoubleValue;
+        
+        if (remoteSpeed > 0)
+        {
+            moveSpeed = remoteSpeed;
+        }
+        }
+        catch (Exception error)
+        {
+            Debug.LogError("Failed to fetch remote config: " + error.Message);
+        }
+    }
+        
     private void FixedUpdate()
     {
         // Apply joystick movement to the Rigidbody 

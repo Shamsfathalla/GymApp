@@ -135,10 +135,10 @@ TextureImporter:
       name: gym_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 2447
-        height: 1536
+        x: 769
+        y: 267
+        width: 1289
+        height: 1066
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
