@@ -18,7 +18,6 @@ public class InputManager : MonoBehaviour
     private void Update()
     {
         // 1. MOVEMENT CHECK 
-        // We removed the lock! The player can now move freely even if a menu is open.
         Movement = playerInput.actions["Move"].ReadValue<Vector2>();
 
         // 2. CLICK/TAP CHECK

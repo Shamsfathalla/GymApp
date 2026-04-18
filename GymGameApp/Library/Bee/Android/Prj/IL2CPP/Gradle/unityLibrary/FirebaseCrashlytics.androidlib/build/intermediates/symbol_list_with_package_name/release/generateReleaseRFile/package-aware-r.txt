@@ -1,3 +1,0 @@
-com.google.firebase.crashlytics.unity
-string com_crashlytics_android_build_id
-string com_google_firebase_crashlytics_unity_version
