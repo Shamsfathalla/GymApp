@@ -20,6 +20,9 @@ public class audioManager : MonoBehaviour
             Destroy(gameObject);  // Destroy duplicate instances
             return;
         }
+
+        Application.targetFrameRate = 90;
+        DontDestroyOnLoad(this.gameObject);
     }
 
     public void PlayClick()
